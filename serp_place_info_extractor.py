@@ -1,8 +1,8 @@
 import os
 import re
-import csv
 import serpapi
 import dotenv
+import pandas as pd
 from tqdm import tqdm
 import time
 from rich import print
@@ -89,11 +89,14 @@ def extract_place_information(keyword, postcode, save_path):
         sleep_time -= 1
         pbar.update(1 / wait_time)
     pbar.set_description('Done')
+    
+  # Save the collected data to a CSV file
+  df = pd.DataFrame(data, columns=['title', 'street_name_and_no', 'zip_code', 'city', 'country', 'website', 'phone'])
 
-  with open(save_path, 'w', newline='', encoding='utf-8') as f:
-    writer = csv.writer(f)
-    writer.writerow(['title', 'street_name_and_no', 'zip_code', 'city', 'country', 'website', 'phone'])
-    writer.writerows(data)
+  # Remove duplicates
+  df.drop_duplicates(subset='website', keep='first', inplace=True)
+
+  df.to_csv(save_path, index=False, encoding='utf-8')
     
   print(f"[green]Done Google Maps data extraction. Extracted [bold yellow]{len(data)}[/bold yellow] results. Saved to [bold yellow]{save_path}[/bold yellow].")
 
