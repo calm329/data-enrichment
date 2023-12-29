@@ -45,7 +45,7 @@ def parse_address_and_get_details(result):
   # Return the parsed address and details as a list
   return [title, street_name_and_no, zip_code, city, country, website, phone]
 
-def extract_place_information(keyword, postcode, save_path):
+def extract_place_information(keyword, ll, save_path, clear=True):
   # Create a SerpApi client for Google Maps web scraping
   client = serpapi.Client(api_key=os.getenv("SERP_APIKEY"))
 
@@ -54,9 +54,9 @@ def extract_place_information(keyword, postcode, save_path):
     "engine": "google_maps",
     "type": "search",
     "google_domain": "google.de",
-    "q": f"{keyword} near {postcode} in Deutschland",
+    "q": f"{keyword}",
     "hl": "de",
-    "ll": "@52.5200,13.4050,15z",
+    "ll": ll,
     "gl": "DE"
   }
 
@@ -96,10 +96,13 @@ def extract_place_information(keyword, postcode, save_path):
   # Remove duplicates
   df.drop_duplicates(subset='website', keep='first', inplace=True)
 
-  df.to_csv(save_path, index=False, encoding='utf-8')
+  if clear:
+    df.to_csv(save_path, index=False, encoding='utf-8')
+  else:
+    df.to_csv(save_path, mode='a', index=False, encoding='utf-8', header=False)
     
   print(f"[green]Done Google Maps data extraction. Extracted [bold yellow]{len(data)}[/bold yellow] results. Saved to [bold yellow]{save_path}[/bold yellow].")
 
 if __name__ == "__main__":
   # example usage of the function
-  extract_place_information("Kosmetikstudio", "01945", save_path='output/googlemaps.csv')
+  extract_place_information("Kosmetikstudio", "@51.2535714,14.1347891,15z", save_path='output/googlemaps.csv')

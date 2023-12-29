@@ -598,6 +598,24 @@
         "documentation": {}
     },
     {
+        "label": "convert_postcode_to_latlong",
+        "kind": 2,
+        "importPath": "get_geocoding",
+        "description": "get_geocoding",
+        "peekOfCode": "def convert_postcode_to_latlong(postal_code, api_key):\n  base_url = \"https://api.opencagedata.com/geocode/v1/json\"\n  params = {'q': str(postal_code) + \", DE\", 'key': api_key}\n  response = requests.get(base_url, params=params)\n  if response.status_code == 200:\n    data = response.json()\n    lat = data['results'][0]['geometry']['lat']\n    lng = data['results'][0]['geometry']['lng']\n    return lat, lng\n  else:",
+        "detail": "get_geocoding",
+        "documentation": {}
+    },
+    {
+        "label": "key",
+        "kind": 5,
+        "importPath": "get_geocoding",
+        "description": "get_geocoding",
+        "peekOfCode": "key = 'cd298485ee44452f91ce0629dfedd708'\nprint(convert_postcode_to_latlong('92260', key))",
+        "detail": "get_geocoding",
+        "documentation": {}
+    },
+    {
         "label": "add_url_scheme_if_none",
         "kind": 2,
         "importPath": "impressum",
@@ -629,7 +647,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def sample_func():\n  keyword = questionary.text(\n    'What are you looking for?',\n  ).ask()\n  option = questionary.select(\n    'Please select an option below to continue',\n    choices=['Basic Scraping', 'Postal Code Scraping']\n  ).ask()\n  if option == 'Basic Scraping':\n    extract_place_information(keyword, 'Dresden', 'output/googlemaps.csv')",
+        "peekOfCode": "def sample_func():\n  keyword = questionary.text(\n    'What are you looking for?',\n  ).ask()\n  option = questionary.select(\n    'Please select an option below to continue',\n    choices=['Basic Scraping', 'Postal Code Scraping']\n  ).ask()\n  if option == 'Basic Scraping':\n    df = pd.read_csv('data/basic.csv', dtype={'postal_code': str})",
         "detail": "main",
         "documentation": {}
     },
@@ -674,7 +692,7 @@
         "kind": 2,
         "importPath": "serp_place_info_extractor",
         "description": "serp_place_info_extractor",
-        "peekOfCode": "def extract_place_information(keyword, postcode, save_path):\n  # Create a SerpApi client for Google Maps web scraping\n  client = serpapi.Client(api_key=os.getenv(\"SERP_APIKEY\"))\n  # Specify parameters for the search\n  params = {\n    \"engine\": \"google_maps\",\n    \"type\": \"search\",\n    \"google_domain\": \"google.de\",\n    \"q\": f\"{keyword} near {postcode} in Deutschland\",\n    \"hl\": \"de\",",
+        "peekOfCode": "def extract_place_information(keyword, ll, save_path, clear=True):\n  # Create a SerpApi client for Google Maps web scraping\n  client = serpapi.Client(api_key=os.getenv(\"SERP_APIKEY\"))\n  # Specify parameters for the search\n  params = {\n    \"engine\": \"google_maps\",\n    \"type\": \"search\",\n    \"google_domain\": \"google.de\",\n    \"q\": f\"{keyword}\",\n    \"hl\": \"de\",",
         "detail": "serp_place_info_extractor",
         "documentation": {}
     },

@@ -4,6 +4,7 @@ from serp_place_info_extractor import extract_place_information
 from impressum import add_impressum_urls
 from parsing import extract_contact_from_websites
 from snov_io_email_finder import enrich_data_with_email_finder
+import pandas as pd
 
 app = typer.Typer()
 
@@ -19,7 +20,9 @@ def sample_func():
   ).ask()
   
   if option == 'Basic Scraping':
-    extract_place_information(keyword, 'Dresden', 'output/googlemaps.csv')
+    df = pd.read_csv('data/basic.csv', dtype={'postal_code': str})
+    for row in df.itertuples():
+      extract_place_information(keyword, f"@{row.latitude},{row.longitude},15z", 'output/googlemaps.csv', clear=False)
     add_impressum_urls('output/googlemaps.csv', 'output/physio_impressum.csv')
     extract_contact_from_websites('output/physio_impressum.csv', 'output/physio_impressum_result.csv')
     enrich_data_with_email_finder('output/physio_impressum_result.csv', 'output/physio_enriched.csv')
@@ -27,6 +30,15 @@ def sample_func():
     postal_code = questionary.text(
       'What is your postal code?',
     ).ask()
+    
+    df = pd.read_csv('data/all.csv', dtype={'postal_code': str})
+    # Print the rows where postal_code starts with '01'
+    df_filtered = df[df['postal_code'].astype(str).str.startswith(postal_code)]
+    for row in df_filtered.itertuples():
+      extract_place_information(keyword, f"@{row.latitude},{row.longitude},15z", 'output/googlemaps.csv', clear=False)
+    add_impressum_urls('output/googlemaps.csv', 'output/physio_impressum.csv')
+    extract_contact_from_websites('output/physio_impressum.csv', 'output/physio_impressum_result.csv')
+    enrich_data_with_email_finder('output/physio_impressum_result.csv', 'output/physio_enriched.csv')
 
 if __name__ == "__main__":
   app()

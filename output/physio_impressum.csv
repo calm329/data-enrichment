@@ -1,11 +1,322 @@
 title,street_name_and_no,zip_code,city,country,website,phone,Impressum
-Café Milchmädchen,Grunaer Str. 27,1069,Dresden,Deutschland,http://milchmaedchen-cafe.de/,+49 351 21512735,https://www.facebook.com/impressum
-Café Oswaldz,Bautzner Str. 9,1099,Dresden,Deutschland,http://www.oswaldz.de/,+49 173 4292053,https://www.cafeklatsch-dresden.de/impressum
-Café Glocke - Tagesbar & Café | Dresden-Neustadt,"Pulsnitzer Straße 1, Ecke, Martin-Luther-Platz",1099,Dresden,Deutschland,https://www.cafeglocke.de/,+49 351 89962500,http://www.oswaldz.de/impressum.html
-Dresdner Kaffeestübchen,Salzgasse 8,1067,Dresden,Deutschland,http://www.dresdner-kaffeestuebchen.de/,+49 1515 4846625,http://fb.com/impressum
-Lloyd’s Café & Bar,Martin-Luther-Straße 17,1099,Dresden,Deutschland,http://www.lloyds-cafe-bar.de/,+49 351 5018774,http://milchmaedchen-cafe.de/impressum
-Café Europa,Königsbrücker Str. 68,1099,Dresden,Deutschland,https://www.cafe-europa-dresden.de/,+49 351 8044810,http://www.cafe-dresden.de/impressum
-Café Eckstein,Alaunstraße 47,1099,Dresden,Deutschland,http://www.cafe-eckstein-dresden.de/,+49 351 81071166,https://www.cafe-europa-dresden.de/impressum.html
-Café Lino,Schandauer Str. 23 D,1309,Dresden,Deutschland,http://xn--caflino-dya.de/,+49 351 21933955,https://www.cafeglocke.de/impressum
-Kunst Café Antik,An d. Frauenkirche 5,1067,Dresden,Deutschland,http://www.cafe-dresden.de/,+49 351 4965217,http://www.cafe-toscana.de/impressum.html
-TanteLeuk,Louisenstraße 24,1099,Dresden,Deutschland,http://tanteleuk.de/,+49 351 40754562,http://kaeseglocke-in-dresden.de/impressum
+Bäckerei & Eiscafé Hübner,Borsbergstraße 1,1328,Dresden,Deutschland,https://www.baeckerei-huebner.de/,+49 351 2683309,http://www.charlottesenkel.com/impressum
+Café Toscana,Schillerpl. 7,1309,Dresden,Deutschland,http://www.cafe-toscana.de/,+49 351 3100744,http://www.cafe-luk.de/impressum
+Kaffee Wippler GmbH,Körnerpl. 2,1326,Dresden,Deutschland,http://www.konditorei-wippler.de/,+49 351 2698040,http://www.oswaldz.de/impressum.html
+Café Hüblers,Hüblerstraße 2,1309,Dresden,Deutschland,https://baeckerei-matzker.de/cafe-hueblers/,+49 351 31905530,https://www.facebook.com/impressum
+Cafe Luk,Grundstraße 174,1324,Dresden,Deutschland,http://www.cafe-luk.de/,+49 351 65399150,https://www.baeckerei-huebner.de/impressum
+Charlottes Enkel Cafe,Loschwitzer Str. 58,1309,Dresden,Deutschland,http://www.charlottesenkel.com/,+49 351 31208030,http://www.konditorei-wippler.de/impressum
+Café Lino,Schandauer Str. 23 D,1309,Dresden,Deutschland,http://xn--caflino-dya.de/,+49 351 21933955,http://milchmaedchen-cafe.de/impressum
+Bäckerei Dreißig,Alttolkewitz 26,1279,Dresden,Deutschland,https://www.baeckerei-dreissig.de/,+49 351 25969644,https://www.baeckerei-wippler.de/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Leubener Str. 34,1279,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 21760463,https://www.cafeklatsch-dresden.de/impressum
+Ottendorfer Mühlenbäcker,Bautzner Landstraße 112-114,1324,Dresden,Deutschland,https://muehlenbaecker.de/,+49 351 31410715,https://www.baeckerei-dreissig.de/impressum
+Café Schwebebahn,Sierksstraße 2,1326,Dresden,Deutschland,https://cafe-schwebebahn.jimdofree.com/,+49 1577 0160514,https://baeckerei-matzker.de/impressum
+Café Milchmädchen,Grunaer Str. 27,1069,Dresden,Deutschland,http://milchmaedchen-cafe.de/,+49 351 21512735,http://www.kraftwerk-mitte-dresden.de/impressum
+Bäckerei Wippler GmbH,Söbrigener Str. 1,1326,Dresden,Deutschland,https://www.baeckerei-wippler.de/,+49 351 4173660,https://muehlenbaecker.de/impressum
+Café Eisold an der Uniklinik,Fiedlerstraße 36,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-an-der-uniklinik.html,+49 351 4416324,http://www.borowski-dresden.de/impressum
+Café Eisold am Fetscherplatz,Fetscherpl. 2A,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-am-fetscherplatz.html,+49 351 4594592,https://www.emils-1910.de/impressum
+Café Luby,Hertzstraße 22,1257,Dresden,Deutschland,http://www.cultus-dresden.de/,,http://www.cafe-toscana.de/impressum.html
+Café Continental,Görlitzer Str. 1,1099,Dresden,Deutschland,http://www.cafe-continental-dresden.de/,+49 351 2721722,http://www.dein-alex.de/impressum
+Moka Café,Schützengasse 2,1067,Dresden,Deutschland,https://www.facebook.com/coffeemokadd/menu,+49 173 8258840,https://www.cafe-eisold.de/impressum.html
+Café Caféklatsch,Königstraße 8,1097,Dresden,Deutschland,https://www.cafeklatsch-dresden.de/,+49 351 81157922,https://www.baeckerei-dreissig.de/impressum
+KAFFEEHAUS im ITALIENISCHEN DÖRFCHEN,Theaterplatz 3,1067,Dresden,Deutschland,http://www.kaffeehaus-dresden.de/,+49 351 498160,http://www.oswaldz.de/impressum.html
+T1 Bistro & Café,Kraftwerk Mitte 4,1067,Dresden,Deutschland,http://www.kraftwerk-mitte-dresden.de/einziehen/wir-sind-hier/t1-bistro-cafe.php,+49 351 48456751,https://www.cafe-eisold.de/impressum.html
+Segafredo Zanetti Espresso,Webergasse 1,1067,Dresden,Deutschland,http://www.segafredocafe.com/,+49 351 33959298,http://www.kaffeehaus-dresden.de/impressum.html
+Schloßcafé Emil Reimann,Schloßstraße 16,1067,Dresden,Deutschland,https://www.emil-reimann.de/de/filialen/uebersicht-unserer-filialen/schlosscafe-emil-reimann-1651.html,,https://www.starbucks.de/impressum
+Emils 1910 Dresden,Hauptstraße 36,1097,Dresden,Deutschland,https://www.emils-1910.de/dresden/,+49 178 4509562,https://www.starbucks.de/impressum
+Borowski,Prager Str. 8A,1069,Dresden,Deutschland,http://www.borowski-dresden.de/,+49 351 4906411,https://www.starbucks.de/impressum
+ALEX Dresden am Schloss,Schloßstraße 7-9,1067,Dresden,Deutschland,http://www.dein-alex.de/dresden,+49 351 40763260,http://www.borowski-dresden.de/impressum
+Bäckerei Dreißig,Altmarkt 7,1067,Dresden,Deutschland,https://www.baeckerei-dreissig.de/,+49 351 48484840,https://www.starbucks.de/impressum
+aha - LadenCafe,Kreuzstraße 7,1067,Dresden,Deutschland,http://www.ladencafe.de/,+49 351 4960673,https://www.baecker-fehrmann.de/impressum
+Starbucks,Prager Str. 15,1069,Dresden,Deutschland,https://www.starbucks.de/?y_source=1_MTU0NTQzMDktNzE1LWxvY2F0aW9uLndlYnNpdGU=,+49 351 4850950,http://milchmaedchen-cafe.de/impressum
+Café Oswaldz,Bautzner Str. 9,1099,Dresden,Deutschland,http://www.oswaldz.de/,+49 173 4292053,http://milchmaedchen-cafe.de/impressum
+Café Milchmädchen,Grunaer Str. 27,1069,Dresden,Deutschland,http://milchmaedchen-cafe.de/,+49 351 21512735,https://www.studentenwerk-dresden.de/impressum.html
+Café Blau,Wundtstraße 1,1217,Dresden,Deutschland,https://www.studentenwerk-dresden.de/mensen/details-cafe-blau.html,+49 351 47940111,https://www.lecrobag.de/impressum
+"Haferkater, Dresden Hbf",Wiener Platz 4,1069,Dresden,Deutschland,https://haferkater.com/,+49 30 47058936,http://www.oswaldz.de/impressum.html
+Borowski,Prager Str. 8A,1069,Dresden,Deutschland,http://www.borowski-dresden.de/,+49 351 4906411,https://www.schmiddis-dresden.de/impressum.html
+Starbucks,Prager Str. 15,1069,Dresden,Deutschland,https://www.starbucks.de/?y_source=1_MTU0NTQzMDktNzE1LWxvY2F0aW9uLndlYnNpdGU=,+49 351 4850950,https://haferkater.com/impressum
+insgrüne coffeebar,George-Bähr-Straße 7,1069,Dresden,Deutschland,http://www.studentenwerk-dresden.de/mensen/details-insgruene-coffeebar.html,+49 351 46337474,https://www.cafeklatsch-dresden.de/impressum
+Starbucks,Wr. Pl. 4,1069,Dresden,Deutschland,https://www.starbucks.de/?y_source=1_MTU0NTQyNDYtNzE1LWxvY2F0aW9uLndlYnNpdGU=,+49 351 42776967,http://www.ladencafe.de/impressum
+Bäckerei & Konditorei Laube,Schnorrstraße 48,1069,Dresden,Deutschland,https://www.baeckerei-laube.de/filialen-cafes/dresden-schnorrstrasse/,+49 351 86262868,https://www.starbucks.de/impressum
+Segafredo Zanetti Espresso,Webergasse 1,1067,Dresden,Deutschland,http://www.segafredocafe.com/,+49 351 33959298,http://www.studentenwerk-dresden.de/impressum.html
+Schmiddis Café,Eisenstuckstraße 17,1069,Dresden,Deutschland,https://www.schmiddis-dresden.de/,+49 160 5430238,https://www.instagram.com/impressum
+LE CROBAG - vor Gleis 9,"Wiener Platz, Am Hbf 4",1069,Dresden,Deutschland,https://www.lecrobag.de/,+49 351 4818498,https://chicco-di-caffe.de/impressum
+Kaffanero,Rosenstraße 92,1159,Dresden,Deutschland,https://www.kaffanero.de/,+49 351 48618818,https://www.facebook.com/impressum
+Café Oswaldz,Bautzner Str. 9,1099,Dresden,Deutschland,http://www.oswaldz.de/,+49 173 4292053,https://www.baeckerei-laube.de/impressum
+Café Continental,Görlitzer Str. 1,1099,Dresden,Deutschland,http://www.cafe-continental-dresden.de/,+49 351 2721722,http://caneu.de/impressum
+Café Caféklatsch,Königstraße 8,1097,Dresden,Deutschland,https://www.cafeklatsch-dresden.de/,+49 351 81157922,https://www.cafe-europa-dresden.de/impressum.html
+Café Markthalle,"Markthalle, Metzer Str. 1",1097,Dresden,Deutschland,https://www.cafe-markthalle.de/,+49 1523 6236115,https://www.baeckerei-dreissig.de/impressum
+Café Europa,Königsbrücker Str. 68,1099,Dresden,Deutschland,https://www.cafe-europa-dresden.de/,+49 351 8044810,http://andalieb.de/impressum.html
+Café Eckstein,Alaunstraße 47,1099,Dresden,Deutschland,http://www.cafe-eckstein-dresden.de/,+49 351 81071166,http://www.oswaldz.de/impressum.html
+KAWA-Espressobar | Dresden,Hechtstraße 7,1097,Dresden,Deutschland,https://www.instagram.com/kawa_espressobar/,,https://www.emils-1910.de/impressum
+Café Glocke - Tagesbar & Café | Dresden-Neustadt,"Pulsnitzer Straße 1, Ecke, Martin-Luther-Platz",1099,Dresden,Deutschland,https://www.cafeglocke.de/,+49 351 89962500,https://www.cafe-milan.de/impressum
+Cafe & Bar Blumenau,Louisenstraße 67,1099,Dresden,Deutschland,http://www.cafe-blumenau.de/,+49 351 8026501,https://www.cafecello.de/impressum.html
+URBEAN - Brunch | Cake | Coffee,Bautzner Str. 6,1099,Dresden,Deutschland,http://www.urbean.de/,+49 351 27558135,https://www.cafeglocke.de/impressum
+"CANEU, Cafe Neustadt",Bautzner Str. 63,1099,Dresden,Deutschland,http://caneu.de/,+49 351 8996649,http://cafe-maass.de/impressum
+Combo,Louisenstraße 66,1099,Dresden,Deutschland,https://www.facebook.com/CafeCombo/,,https://www.instagram.com/impressum
+Emils 1910 Dresden,Hauptstraße 36,1097,Dresden,Deutschland,https://www.emils-1910.de/dresden/,+49 178 4509562,http://caneu.de/impressum
+Konditorei und Café Maaß,Oschatzer Str. 13,1127,Dresden,Deutschland,http://cafe-maass.de/,+49 351 8495682,https://www.facebook.com/impressum
+Café Andalieb,Louisenstraße 60,1099,Dresden,Deutschland,http://andalieb.de/,+49 351 30992024,https://www.cafe-europa-dresden.de/impressum.html
+TanteLeuk,Louisenstraße 24,1099,Dresden,Deutschland,http://tanteleuk.de/,+49 351 40754562,https://www.cafeklatsch-dresden.de/impressum
+Café Continental,Görlitzer Str. 1,1099,Dresden,Deutschland,http://www.cafe-continental-dresden.de/,+49 351 2721722,https://www.baeckerei-dreissig.de/impressum
+Café Markthalle,"Markthalle, Metzer Str. 1",1097,Dresden,Deutschland,https://www.cafe-markthalle.de/,+49 1523 6236115,https://www.cafecello.de/impressum.html
+Café Europa,Königsbrücker Str. 68,1099,Dresden,Deutschland,https://www.cafe-europa-dresden.de/,+49 351 8044810,http://andalieb.de/impressum.html
+Café Eckstein,Alaunstraße 47,1099,Dresden,Deutschland,http://www.cafe-eckstein-dresden.de/,+49 351 81071166,https://www.cafeglocke.de/impressum
+KAWA-Espressobar | Dresden,Hechtstraße 7,1097,Dresden,Deutschland,https://www.instagram.com/kawa_espressobar/,,https://www.emils-1910.de/impressum
+"CANEU, Cafe Neustadt",Bautzner Str. 63,1099,Dresden,Deutschland,http://caneu.de/,+49 351 8996649,https://muehlenbaecker.de/impressum
+Café Caféklatsch,Königstraße 8,1097,Dresden,Deutschland,https://www.cafeklatsch-dresden.de/,+49 351 81157922,http://www.oswaldz.de/impressum.html
+Combo,Louisenstraße 66,1099,Dresden,Deutschland,https://www.facebook.com/CafeCombo/,,https://www.cafe-europa-dresden.de/impressum.html
+Emils 1910 Dresden,Hauptstraße 36,1097,Dresden,Deutschland,https://www.emils-1910.de/dresden/,+49 178 4509562,https://www.instagram.com/impressum
+Café Andalieb,Louisenstraße 60,1099,Dresden,Deutschland,http://andalieb.de/,+49 351 30992024,https://m.facebook.com/impressum
+TanteLeuk,Louisenstraße 24,1099,Dresden,Deutschland,http://tanteleuk.de/,+49 351 40754562,https://www.zusammen-fuer-weixdorf.de/impressum.html
+Ottendorfer Mühlenbäcker,Königsbrücker Landstraße 303,1108,Dresden,Deutschland,https://muehlenbaecker.de/,+49 351 40468360,https://www.cafeklatsch-dresden.de/impressum
+Bäckerei Petzold - Backshop im EKZ Weixdorf,Hohenbusch-Markt 1,1108,Dresden,Deutschland,http://www.baeckerei-petzold.de/,+49 351 8905656,http://www.muehlenbaecker.de/impressum
+Thomas Zscheile,Boltenhagener Str. 89,1109,Dresden,Deutschland,https://www.konditorei-zscheile.de/,+49 351 8804574,http://milchmaedchen-cafe.de/impressum
+Ottendorfer Mühlenbäcker,Frankenfurt 1B,1458,Ottendorf-Okrilla,Deutschland,http://www.muehlenbaecker.de/,+49 35205 45026,https://www.baeckerei-cafe-eckert.de/impressum
+Königswald Inh. Elke u. Ute Donath,Königsbrücker Landstraße 69,1109,Dresden,Deutschland,https://baeckerei-donath.de/cafe-koenigswald/,+49 351 8908627,https://www.instagram.com/impressum
+Café Oswaldz,Bautzner Str. 9,1099,Dresden,Deutschland,http://www.oswaldz.de/,+49 173 4292053,https://www.baeckerei-cafe-eckert.de/impressum
+Café zum Türmchen,Industriestraße 12,1129,Dresden,Deutschland,https://www.baeckerei-cafe-eckert.de/,+49 351 8435324,https://baeckerei-donath.de/impressum
+Café Caféklatsch,Königstraße 8,1097,Dresden,Deutschland,https://www.cafeklatsch-dresden.de/,+49 351 81157922,https://www.cafe-europa-dresden.de/impressum.html
+Café Markthalle,"Markthalle, Metzer Str. 1",1097,Dresden,Deutschland,https://www.cafe-markthalle.de/,+49 1523 6236115,http://www.cafe-eisold.de/impressum.html
+Thomas Zscheile,Boltenhagener Str. 89,1109,Dresden,Deutschland,https://www.konditorei-zscheile.de/,+49 351 8804574,http://www.oswaldz.de/impressum.html
+Hellerauer Marktbäcker Inhaber Torsten Eckert,Markt 1,1109,Dresden,Deutschland,http://www.hellerauermarktbaecker.de/,+49 351 87978012,http://www.hellerauermarktbaecker.de/impressum
+Eisold Bäckerei - Konditorei - Café,Karl-Marx-Straße 9,1109,Dresden,Deutschland,http://www.cafe-eisold.de/,+49 351 8010833,https://www.cafeklatsch-dresden.de/impressum
+Königswald Inh. Elke u. Ute Donath,Königsbrücker Landstraße 69,1109,Dresden,Deutschland,https://baeckerei-donath.de/cafe-koenigswald/,+49 351 8908627,http://www.mayayoga.de/impressum
+Bäckerei Petzold - Backshop im Fontane-Center,Sagarder Weg 1,1109,Dresden,Deutschland,http://www.baeckerei-petzold.de/,+49 351 8888496,https://www.instagram.com/impressum
+Café Europa,Königsbrücker Str. 68,1099,Dresden,Deutschland,https://www.cafe-europa-dresden.de/,+49 351 8044810,https://www.baeckerei-cafe-eckert.de/impressum
+Café Continental,Görlitzer Str. 1,1099,Dresden,Deutschland,http://www.cafe-continental-dresden.de/,+49 351 2721722,https://www.gemuesetorte.de/impressum
+Café Eckstein,Alaunstraße 47,1099,Dresden,Deutschland,http://www.cafe-eckstein-dresden.de/,+49 351 81071166,https://www.charlottesenkel.com/impressum
+Café Genuss,Trachenberger Str. 72,1129,Dresden,Deutschland,http://www.cafegenuss-dresden.de/,+49 351 8748273,http://cafe-maass.de/impressum
+Café Oswaldz,Bautzner Str. 9,1099,Dresden,Deutschland,http://www.oswaldz.de/,+49 173 4292053,https://www.cafecello.de/impressum.html
+Ottendorfer Mühlenbäcker,Keulenbergstraße 34,1109,Dresden,Deutschland,http://www.muehlenbaecker.de/,+49 351 88961092,http://www.muehlenbaecker.de/impressum
+Café Caféklatsch,Königstraße 8,1097,Dresden,Deutschland,https://www.cafeklatsch-dresden.de/,+49 351 81157922,https://www.baeckerei-dreissig.de/impressum
+Café Markthalle,"Markthalle, Metzer Str. 1",1097,Dresden,Deutschland,https://www.cafe-markthalle.de/,+49 1523 6236115,https://www.cafe-europa-dresden.de/impressum.html
+Cafe Cello,Bischofsweg 40,1099,Dresden,Deutschland,https://www.cafecello.de/,+49 351 81163525,https://baeckerei-donath.de/impressum
+Café zum Türmchen,Industriestraße 12,1129,Dresden,Deutschland,https://www.baeckerei-cafe-eckert.de/,+49 351 8435324,http://www.oswaldz.de/impressum.html
+Landbäckerei Schmidt GmbH - Café,Großenhainer Str. 111,1127,Dresden,Deutschland,https://www.landbaeckerei-schmidt.de/,+49 351 79526830,https://www.landbaeckerei-schmidt.de/impressum
+Ännes Café,Konkordienstraße 46,1127,Dresden,Deutschland,https://www.gemuesetorte.de/,+49 351 33232812,https://www.cafeklatsch-dresden.de/impressum
+Café Mahlgrad 156,Leipziger Str. 156,1127,Dresden,Deutschland,http://www.cafe-mahlgrad.de/,+49 351 27596986,http://www.muehlenbaecker.de/impressum
+Charlottes Enkel Café,Weinböhlaer Str. 9,1127,Dresden,Deutschland,https://www.charlottesenkel.com/,+49 351 65617708,https://www.baeckerei-cafe-eckert.de/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Weinböhlaer Str. 68,1127,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 81041727,https://www.instagram.com/impressum
+Café Caféklatsch,Königstraße 8,1097,Dresden,Deutschland,https://www.cafeklatsch-dresden.de/,+49 351 81157922,https://www.primus-service.de/impressum
+Landbäckerei Schmidt GmbH - Café,Großenhainer Str. 111,1127,Dresden,Deutschland,https://www.landbaeckerei-schmidt.de/,+49 351 79526830,https://www.landbaeckerei-schmidt.de/impressum
+Café Genuss,Trachenberger Str. 72,1129,Dresden,Deutschland,http://www.cafegenuss-dresden.de/,+49 351 8748273,https://muehlenbaecker.de/impressum
+Ottendorfer Mühlenbäcker,Großenhainer Str. 108,1129,Dresden,Deutschland,http://www.muehlenbaecker.de/,+49 351 84725216,https://www.baeckerei-claus.de/impressum
+Bäckerei Konditorei Claus GmbH & Co. KG,Großenhainer Str. 169,1129,Dresden,Deutschland,https://www.baeckerei-claus.de/filialen/,+49 351 8497777,http://www.muehlenbaecker.de/impressum
+Primus Service GmbH,"Cafeteria, Industriestraße 40 Städtisches Klinikum Dresden",1129,Dresden,Deutschland,https://www.primus-service.de/,+49 221 977070,https://www.baeckerei-cafe-eckert.de/impressum
+Ottendorfer Mühlenbäcker,Großenhainer Str. 156,1129,Dresden,Deutschland,https://muehlenbaecker.de/,+49 351 86293279,https://kamps.de/impressum
+Eiscafé Dolce Vita,Peschelstraße 33,1139,Dresden,Deutschland,http://www.eiscafe-dolce-vita.de/,+49 351 7957625,https://www.cafe-europa-dresden.de/impressum.html
+Unser Bäcker - Bäckerei und Konditorei GmbH,Weinböhlaer Str. 68,1127,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 81041727,https://www.baeckerei-dreissig.de/impressum
+KAWA-Espressobar | Dresden,Hechtstraße 7,1097,Dresden,Deutschland,https://www.instagram.com/kawa_espressobar/,,https://dresden.feg.de/impressum
+Café Mahlgrad 156,Leipziger Str. 156,1127,Dresden,Deutschland,http://www.cafe-mahlgrad.de/,+49 351 27596986,https://www.facebook.com/impressum
+Café zum Türmchen,Industriestraße 12,1129,Dresden,Deutschland,https://www.baeckerei-cafe-eckert.de/,+49 351 8435324,https://www.cafeklatsch-dresden.de/impressum
+Eiscafé Dolce Vita,Peschelstraße 33,1139,Dresden,Deutschland,http://www.eiscafe-dolce-vita.de/,+49 351 7957625,https://dresden.feg.de/impressum
+Kamps Bäckerei mit Backstube,Peschelstraße 33 Elbepark,1139,Dresden,Deutschland,https://kamps.de/standort/kamps-baeckerei-mit-backstube-elbepark-dresden-peschelstrasse-33,+49 351 81129801,http://www.muehlenbaecker.de/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Overbeckstraße 38,1139,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 84754374,https://www.facebook.com/impressum
+Café goldrichtig,Leipziger Str. 220,1139,Dresden,Deutschland,https://dresden.feg.de/gemeindeleben/cafe-goldrichtig/,,http://cafe-maass.de/impressum
+Bäckerei Dreißig,Leipziger Str. 120,1127,Dresden,Deutschland,https://www.baeckerei-dreissig.de/,+49 351 28787880,https://coffee-fellows.com/impressum
+Emil Reimann Dresden - Backstube mit Werksverkauf,Marie-Curie-Straße 11,1139,Dresden,Deutschland,https://www.emil-reimann.de/,+49 351 2728813,http://www.landbaeckerei-schmidt.de/impressum
+Konditorei und Café Maaß,Oschatzer Str. 13,1127,Dresden,Deutschland,http://cafe-maass.de/,+49 351 8495682,https://www.cafeklatsch-dresden.de/impressum
+Ferienwohnung und Hofkaffee Sellung,Ockerwitzer Dorfstraße 8,1156,Dresden,Deutschland,http://www.xn--dreimdelhofkaffee-uqb.de/,+49 351 2196138,http://www.konditorei-mueller.com/impressum
+Landbäckerei Schmidt GmbH - Café,Hamburger Str. 88,1157,Dresden,Deutschland,http://www.landbaeckerei-schmidt.de/,+49 351 50081545,https://www.baeckerei-cafe-eckert.de/impressum
+Konditorei & Café Müller,Gohliser Str. 1/4,1159,Dresden,Deutschland,http://www.konditorei-mueller.com/,+49 351 4214576,https://www.unser-baecker.de/impressum
+Café Positano,Wilsdruffer Str. 85,1705,Freital,Deutschland,http://www.cafe-positano.de/,+49 351 6555584,http://www.kraftwerk-mitte-dresden.de/impressum
+Moka Café,Schützengasse 2,1067,Dresden,Deutschland,https://www.facebook.com/coffeemokadd/menu,+49 173 8258840,http://milchmaedchen-cafe.de/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Gompitzer Höhe 2,1156,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 42483209,http://thomas-der-koch.de/impressum.html
+"Coffee Fellows - Kaffee, Bagels, Frühstück","Raststätte Dresdner Tor Süd, A4",1723,Wilsdruff,Deutschland,https://coffee-fellows.com/locations/raststaette-dresdner-tor-sued,+49 35204 9050,http://www.konditorei-mueller.com/impressum
+Eiscafé Dolce Vita,Peschelstraße 33,1139,Dresden,Deutschland,http://www.eiscafe-dolce-vita.de/,+49 351 7957625,http://www.landbaeckerei-schmidt.de/impressum
+Café zum Türmchen,Industriestraße 12,1129,Dresden,Deutschland,https://www.baeckerei-cafe-eckert.de/,+49 351 8435324,https://www.unser-baecker.de/impressum
+Dorfcafé Bäckerei und Konditorei Grafe,Freitaler Str. 3,1705,Freital,Deutschland,http://www.dorfcafe-baeckerei-grafe.de/,+49 351 6506387,https://www.facebook.com/impressum
+T1 Bistro & Café,Kraftwerk Mitte 4,1067,Dresden,Deutschland,http://www.kraftwerk-mitte-dresden.de/einziehen/wir-sind-hier/t1-bistro-cafe.php,+49 351 48456751,http://www.baeckerei-claus.de/impressum
+KAFFEEHAUS im ITALIENISCHEN DÖRFCHEN,Theaterplatz 3,1067,Dresden,Deutschland,http://www.kaffeehaus-dresden.de/,+49 351 498160,https://www.baecker-fehrmann.de/impressum
+Dresdner Backhaus GmbH - Café Radebeul,Sidonienstraße 5,1445,Radebeul,Deutschland,https://dresdner-backhaus.de/,+49 351 43508735,http://www.dorfcafe-baeckerei-grafe.de/impressum.html
+Café Milchmädchen,Grunaer Str. 27,1069,Dresden,Deutschland,http://milchmaedchen-cafe.de/,+49 351 21512735,http://www.kaffeehaus-dresden.de/impressum.html
+Café Markthalle,"Markthalle, Metzer Str. 1",1097,Dresden,Deutschland,https://www.cafe-markthalle.de/,+49 1523 6236115,https://www.cafeklatsch-dresden.de/impressum
+Bäckerei & Konditorei Laube,Cossebauder Str. 30,1157,Dresden,Deutschland,https://www.baeckerei-laube.de/filialen-cafes/dresden-cossebauder-strasse/,+49 351 4135299,https://www.unser-baecker.de/impressum
+Thomas der Koch,Scharfenberger Str. 66,1139,Dresden,Deutschland,http://thomas-der-koch.de/kontakt.html,+49 351 8506487,https://www.baeckerei-cafe-eckert.de/impressum
+Konditorei & Café Müller,Gohliser Str. 1/4,1159,Dresden,Deutschland,http://www.konditorei-mueller.com/,+49 351 4214576,http://www.kraftwerk-mitte-dresden.de/impressum
+Connys süßes Lädchen,Raimundstraße 1,1157,Dresden,Deutschland,http://www.connys-suesses-laedchen.de/,+49 351 4176738,https://www.baeckerei-laube.de/impressum
+Bäckerei Konditorei Claus GmbH & Co. KG mit Drive-In Fenster,Bremer Str. 75,1067,Dresden,Deutschland,http://www.baeckerei-claus.de/,+49 351 50196107,http://milchmaedchen-cafe.de/impressum
+Moka Café,Schützengasse 2,1067,Dresden,Deutschland,https://www.facebook.com/coffeemokadd/menu,+49 173 8258840,http://www.konditorei-mueller.com/impressum
+BäckerCafé Fehrmann Dresden,Bremer Str. 14b,1067,Dresden,Deutschland,https://www.baecker-fehrmann.de/,+49 351 49771070,https://www.facebook.com/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Overbeckstraße 38,1139,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 84754374,https://www.dresdner-stollenmanufaktur.de/impressum
+T1 Bistro & Café,Kraftwerk Mitte 4,1067,Dresden,Deutschland,http://www.kraftwerk-mitte-dresden.de/einziehen/wir-sind-hier/t1-bistro-cafe.php,+49 351 48456751,https://www.unser-baecker.de/impressum
+Café Milchmädchen,Grunaer Str. 27,1069,Dresden,Deutschland,http://milchmaedchen-cafe.de/,+49 351 21512735,https://haferkater.com/impressum
+KAFFEEHAUS im ITALIENISCHEN DÖRFCHEN,Theaterplatz 3,1067,Dresden,Deutschland,http://www.kaffeehaus-dresden.de/,+49 351 498160,http://www.signor-edo.de/impressum.html
+Café Markthalle,"Markthalle, Metzer Str. 1",1097,Dresden,Deutschland,https://www.cafe-markthalle.de/,+49 1523 6236115,http://www.kraftwerk-mitte-dresden.de/impressum
+Konditorei & Café Müller,Gohliser Str. 1/4,1159,Dresden,Deutschland,http://www.konditorei-mueller.com/,+49 351 4214576,http://www.signor-edo.de/impressum.html
+Feinbäckerei Schleinig,Bonhoefferpl. 15,1159,Dresden,Deutschland,https://www.dresdner-stollenmanufaktur.de/,+49 351 4215588,https://www.cafeklatsch-dresden.de/impressum
+Flora 27 - Der Kaffeeladen,Chemnitzer Str. 78A,1187,Dresden,Deutschland,http://www.kaffeeservice-jw.de/,+49 351 4223468,http://www.kaffeehaus-dresden.de/impressum.html
+Kaffanero,Rosenstraße 92,1159,Dresden,Deutschland,https://www.kaffanero.de/,+49 351 48618818,http://milchmaedchen-cafe.de/impressum
+Signor Edo,Rudolf-Renner-Straße 45,1159,Dresden,Deutschland,http://www.signor-edo.de/,+49 173 4819143,http://www.konditorei-mueller.com/impressum
+T1 Bistro & Café,Kraftwerk Mitte 4,1067,Dresden,Deutschland,http://www.kraftwerk-mitte-dresden.de/einziehen/wir-sind-hier/t1-bistro-cafe.php,+49 351 48456751,http://www.landbaeckerei-schmidt.de/impressum
+Cross River Coffee,Rudolf-Renner-Straße 36,1159,Dresden,Deutschland,https://crossrivercoffee.de/,+49 351 27580823,https://www.unser-baecker.de/impressum
+Café Grießbach,Neunimptscher Str. 13,1169,Dresden,Deutschland,http://www.cafe-griessbach.de/,+49 351 4022099,http://www.babysundcafe.de/impressum
+"Haferkater, Dresden Hbf",Wiener Platz 4,1069,Dresden,Deutschland,https://haferkater.com/,+49 30 47058936,http://www.studentenwerk-dresden.de/impressum.html
+Babys & Café,Kaitzer Str. 109,1187,Dresden,Deutschland,http://www.babysundcafe.de/,+49 351 4519805,http://www.kaffeehaus-dresden.de/impressum.html
+KAFFEEHAUS im ITALIENISCHEN DÖRFCHEN,Theaterplatz 3,1067,Dresden,Deutschland,http://www.kaffeehaus-dresden.de/,+49 351 498160,http://www.muehlenbaecker.de/impressum
+Café Milchmädchen,Grunaer Str. 27,1069,Dresden,Deutschland,http://milchmaedchen-cafe.de/,+49 351 21512735,https://www.schmiddis-dresden.de/impressum.html
+Ottendorfer Mühlenbäcker,Friedrichstraße 41,1067,Dresden,Deutschland,http://www.muehlenbaecker.de/,+49 351 48186558,https://www.dresdner-stollenmanufaktur.de/impressum
+Café Grießbach,Neunimptscher Str. 13,1169,Dresden,Deutschland,http://www.cafe-griessbach.de/,+49 351 4022099,https://www.cafe-bianco.de/impressum
+Konditorei & Café Müller,Gohliser Str. 1/4,1159,Dresden,Deutschland,http://www.konditorei-mueller.com/,+49 351 4214576,https://www.schmiddis-dresden.de/impressum.html
+Landbäckerei Schmidt GmbH - Café,Hamburger Str. 88,1157,Dresden,Deutschland,http://www.landbaeckerei-schmidt.de/,+49 351 50081545,https://haferkater.com/impressum
+Cross River Coffee,Rudolf-Renner-Straße 36,1159,Dresden,Deutschland,https://crossrivercoffee.de/,+49 351 27580823,http://ascii-dresden.de/impressum
+Ferienwohnung und Hofkaffee Sellung,Ockerwitzer Dorfstraße 8,1156,Dresden,Deutschland,http://www.xn--dreimdelhofkaffee-uqb.de/,+49 351 2196138,http://www.konditorei-mueller.com/impressum
+Connys süßes Lädchen,Raimundstraße 1,1157,Dresden,Deutschland,http://www.connys-suesses-laedchen.de/,+49 351 4176738,http://www.studentenwerk-dresden.de/impressum.html
+Schmiddis Café,Eisenstuckstraße 17,1069,Dresden,Deutschland,https://www.schmiddis-dresden.de/,+49 160 5430238,https://www.facebook.com/impressum
+insgrüne coffeebar,George-Bähr-Straße 7,1069,Dresden,Deutschland,http://www.studentenwerk-dresden.de/mensen/details-insgruene-coffeebar.html,+49 351 46337474,http://www.borowski-dresden.de/impressum
+Schmiddis Café,Eisenstuckstraße 17,1069,Dresden,Deutschland,https://www.schmiddis-dresden.de/,+49 160 5430238,https://www.cafe-milan.de/impressum
+Babys & Café,Kaitzer Str. 109,1187,Dresden,Deutschland,http://www.babysundcafe.de/,+49 351 4519805,http://milchmaedchen-cafe.de/impressum
+Feinbäckerei Schleinig,Bonhoefferpl. 15,1159,Dresden,Deutschland,https://www.dresdner-stollenmanufaktur.de/,+49 351 4215588,http://ascii-dresden.de/impressum
+Flora 27 - Der Kaffeeladen,Chemnitzer Str. 78A,1187,Dresden,Deutschland,http://www.kaffeeservice-jw.de/,+49 351 4223468,http://www.babysundcafe.de/impressum
+Zebradiele,Mommsenstraße 13,1069,Dresden,Deutschland,http://www.studentenwerk-dresden.de/mensen/details-alte-mensa.html,+49 351 469750,https://www.cafe-bianco.de/impressum
+Studentencafé Ascii,Nöthnitzer Str. 46,1187,Dresden,Deutschland,http://ascii-dresden.de/,+49 351 46342221,http://www.studentenwerk-dresden.de/impressum.html
+Konditorei & Café Müller,Gohliser Str. 1/4,1159,Dresden,Deutschland,http://www.konditorei-mueller.com/,+49 351 4214576,https://www.studentenwerk-dresden.de/impressum.html
+Café Bianco,Weißbachstraße 6,1069,Dresden,Deutschland,https://www.cafe-bianco.de/,+49 351 3107380,http://www.cafe-positano.de/impressum
+Café Milchmädchen,Grunaer Str. 27,1069,Dresden,Deutschland,http://milchmaedchen-cafe.de/,+49 351 21512735,https://haferkater.com/impressum
+Bäckerei & Café Uhlig,Nürnberger Str. 30 B,1187,Dresden,Deutschland,https://www.baeckerei-uhlig.de/,+49 351 4713453,https://www.studentenwerk-dresden.de/impressum.html
+Café Blau,Wundtstraße 1,1217,Dresden,Deutschland,https://www.studentenwerk-dresden.de/mensen/details-cafe-blau.html,+49 351 47940111,http://www.konditorei-mueller.com/impressum
+Stollenbackstube,Am Hohen Stein 31,1189,Dresden,Deutschland,http://www.dresdner-christstollen-shop.de/,+49 351 40351080,http://milchmaedchen-cafe.de/impressum
+Segafredo Zanetti Espresso,Webergasse 1,1067,Dresden,Deutschland,http://www.segafredocafe.com/,+49 351 33959298,https://www.facebook.com/impressum
+Borowski,Prager Str. 8A,1069,Dresden,Deutschland,http://www.borowski-dresden.de/,+49 351 4906411,https://www.baeckerei-laube.de/impressum
+Babys & Café,Kaitzer Str. 109,1187,Dresden,Deutschland,http://www.babysundcafe.de/,+49 351 4519805,https://www.cafe-bianco.de/impressum
+Studentencafé Ascii,Nöthnitzer Str. 46,1187,Dresden,Deutschland,http://ascii-dresden.de/,+49 351 46342221,http://www.studentenwerk-dresden.de/impressum.html
+insgrüne coffeebar,George-Bähr-Straße 7,1069,Dresden,Deutschland,http://www.studentenwerk-dresden.de/mensen/details-insgruene-coffeebar.html,+49 351 46337474,http://www.babysundcafe.de/impressum
+Café Bianco,Weißbachstraße 6,1069,Dresden,Deutschland,https://www.cafe-bianco.de/,+49 351 3107380,http://www.studentenwerk-dresden.de/impressum.html
+Café Blau,Wundtstraße 1,1217,Dresden,Deutschland,https://www.studentenwerk-dresden.de/mensen/details-cafe-blau.html,+49 351 47940111,https://www.schmiddis-dresden.de/impressum.html
+"Haferkater, Dresden Hbf",Wiener Platz 4,1069,Dresden,Deutschland,https://haferkater.com/,+49 30 47058936,https://www.baeckereiundkonditorei-hauer.de/impressum
+Zebradiele,Mommsenstraße 13,1069,Dresden,Deutschland,http://www.studentenwerk-dresden.de/mensen/details-alte-mensa.html,+49 351 469750,https://www.studentenwerk-dresden.de/impressum.html
+Konditorei & Café Müller,Gohliser Str. 1/4,1159,Dresden,Deutschland,http://www.konditorei-mueller.com/,+49 351 4214576,http://www.kraftwerk-mitte-dresden.de/impressum
+Moka Café,Schützengasse 2,1067,Dresden,Deutschland,https://www.facebook.com/coffeemokadd/menu,+49 173 8258840,http://ascii-dresden.de/impressum
+Schmiddis Café,Eisenstuckstraße 17,1069,Dresden,Deutschland,https://www.schmiddis-dresden.de/,+49 160 5430238,http://www.kaffeeservice-jw.de/impressum.html
+Café Positano,Wilsdruffer Str. 85,1705,Freital,Deutschland,http://www.cafe-positano.de/,+49 351 6555584,http://www.kaffeeservice-jw.de/impressum.html
+KAFFEEHAUS im ITALIENISCHEN DÖRFCHEN,Theaterplatz 3,1067,Dresden,Deutschland,http://www.kaffeehaus-dresden.de/,+49 351 498160,http://www.kaffeeservice-jw.de/impressum.html
+T1 Bistro & Café,Kraftwerk Mitte 4,1067,Dresden,Deutschland,http://www.kraftwerk-mitte-dresden.de/einziehen/wir-sind-hier/t1-bistro-cafe.php,+49 351 48456751,https://haferkater.com/impressum
+Café Blau,Wundtstraße 1,1217,Dresden,Deutschland,https://www.studentenwerk-dresden.de/mensen/details-cafe-blau.html,+49 351 47940111,http://milchmaedchen-cafe.de/impressum
+Café Bianco,Weißbachstraße 6,1069,Dresden,Deutschland,https://www.cafe-bianco.de/,+49 351 3107380,http://www.kaffeehaus-dresden.de/impressum.html
+Bäckerei und Konditorei Hauer,Friebelstraße 1,1219,Dresden,Deutschland,https://www.baeckereiundkonditorei-hauer.de/,+49 351 79663300,https://www.facebook.com/impressum
+Zebradiele,Mommsenstraße 13,1069,Dresden,Deutschland,http://www.studentenwerk-dresden.de/mensen/details-alte-mensa.html,+49 351 469750,http://www.studentenwerk-dresden.de/impressum.html
+Dresdner Backhaus GmbH,"Spitzwegstr, im Konsum-Markt 48",1219,Dresden,Deutschland,https://dresdner-backhaus.de/,+49 351 43508737,http://facebook.com/impressum
+insgrüne coffeebar,George-Bähr-Straße 7,1069,Dresden,Deutschland,http://www.studentenwerk-dresden.de/mensen/details-insgruene-coffeebar.html,+49 351 46337474,https://www.baeckereiundkonditorei-hauer.de/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Wilhelm-Franke-Straße 38A,1219,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 86261472,https://www.schmiddis-dresden.de/impressum.html
+Café Milchmädchen,Grunaer Str. 27,1069,Dresden,Deutschland,http://milchmaedchen-cafe.de/,+49 351 21512735,https://www.baeckerei-laube.de/impressum
+"Haferkater, Dresden Hbf",Wiener Platz 4,1069,Dresden,Deutschland,https://haferkater.com/,+49 30 47058936,http://www.studentenwerk-dresden.de/impressum.html
+Studentencafé Ascii,Nöthnitzer Str. 46,1187,Dresden,Deutschland,http://ascii-dresden.de/,+49 351 46342221,http://milchmaedchen-cafe.de/impressum
+Bäckerei & Konditorei Laube,Schnorrstraße 48,1069,Dresden,Deutschland,https://www.baeckerei-laube.de/filialen-cafes/dresden-schnorrstrasse/,+49 351 86262868,https://www.studentenwerk-dresden.de/impressum.html
+Café Lino,Schandauer Str. 23 D,1309,Dresden,Deutschland,http://xn--caflino-dya.de/,+49 351 21933955,https://haferkater.com/impressum
+"Ka'Fee Girrbach - Kuchen, Kaffee, Frühstück, Brunch",Striesener Str. 31,1307,Dresden,Deutschland,https://www.kafee-girrbach.de/,+49 351 50197990,https://www.facebook.com/impressum
+Schmiddis Café,Eisenstuckstraße 17,1069,Dresden,Deutschland,https://www.schmiddis-dresden.de/,+49 160 5430238,http://facebook.com/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Wilhelm-Franke-Straße 38A,1219,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 86261472,https://www.baeckerei-laube.de/impressum
+Café Lino,Schandauer Str. 23 D,1309,Dresden,Deutschland,http://xn--caflino-dya.de/,+49 351 21933955,http://www.cafe-eisold.de/impressum.html
+Café Milchmädchen,Grunaer Str. 27,1069,Dresden,Deutschland,http://milchmaedchen-cafe.de/,+49 351 21512735,https://muehlenbaecker.de/impressum
+Dresdner Backhaus GmbH,"Spitzwegstr, im Konsum-Markt 48",1219,Dresden,Deutschland,https://dresdner-backhaus.de/,+49 351 43508737,https://www.unser-baecker.de/impressum
+"Ka'Fee Girrbach - Kuchen, Kaffee, Frühstück, Brunch",Striesener Str. 31,1307,Dresden,Deutschland,https://www.kafee-girrbach.de/,+49 351 50197990,https://www.cafe-eisold.de/impressum.html
+"Haferkater, Dresden Hbf",Wiener Platz 4,1069,Dresden,Deutschland,https://haferkater.com/,+49 30 47058936,http://www.cafe-toscana.de/impressum.html
+Eisold Bäckerei - Konditorei - Café,Zwinglistraße 40-46,1277,Dresden,Deutschland,http://www.cafe-eisold.de/,+49 351 2502894,https://www.studentenwerk-dresden.de/impressum.html
+Café Eisold am Fetscherplatz,Fetscherpl. 2A,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-am-fetscherplatz.html,+49 351 4594592,http://www.kaffeehaus-dresden.de/impressum.html
+Moka Café,Schützengasse 2,1067,Dresden,Deutschland,https://www.facebook.com/coffeemokadd/menu,+49 173 8258840,http://milchmaedchen-cafe.de/impressum
+Bäckerei & Konditorei Laube,Schnorrstraße 48,1069,Dresden,Deutschland,https://www.baeckerei-laube.de/filialen-cafes/dresden-schnorrstrasse/,+49 351 86262868,https://www.baeckereiundkonditorei-hauer.de/impressum
+KAFFEEHAUS im ITALIENISCHEN DÖRFCHEN,Theaterplatz 3,1067,Dresden,Deutschland,http://www.kaffeehaus-dresden.de/,+49 351 498160,http://www.cafe-bluemchen.de/impressum
+Café Toscana,Schillerpl. 7,1309,Dresden,Deutschland,http://www.cafe-toscana.de/,+49 351 3100744,http://www.charlottesenkel.com/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Breitscheidstraße 67,1237,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 25384353,https://www.unser-baecker.de/impressum
+Bäckerei Emil Reimann,Bodenbacher Str. 81a,1277,Dresden,Deutschland,https://www.emil-reimann.de/de/filialen/uebersicht-unserer-filialen/baeckerei-und-cafe-im-obi-1656.html,+49 178 4509539,http://www.cafe-eisold.de/impressum.html
+Café Blau,Wundtstraße 1,1217,Dresden,Deutschland,https://www.studentenwerk-dresden.de/mensen/details-cafe-blau.html,+49 351 47940111,https://baeckerei-matzker.de/impressum
+"Ka'Fee Girrbach - Kuchen, Kaffee, Frühstück, Brunch",Striesener Str. 31,1307,Dresden,Deutschland,https://www.kafee-girrbach.de/,+49 351 50197990,https://www.baeckereiundkonditorei-hauer.de/impressum
+Café Luby,Hertzstraße 22,1257,Dresden,Deutschland,http://www.cultus-dresden.de/,,https://muehlenbaecker.de/impressum
+Eisold Bäckerei - Konditorei - Café,Zwinglistraße 40-46,1277,Dresden,Deutschland,http://www.cafe-eisold.de/,+49 351 2502894,http://www.cafe-bluemchen.de/impressum
+Bäckerei und Konditorei Hauer,Friebelstraße 1,1219,Dresden,Deutschland,https://www.baeckereiundkonditorei-hauer.de/,+49 351 79663300,http://www.cafe-toscana.de/impressum.html
+Speisecafé Die Fabrik,Papstdorfer Str. 17,1277,Dresden,Deutschland,https://diefabrik.wixsite.com/diefabrik,+49 1573 7891525,https://www.baeckerei-laube.de/impressum
+Café Eisold am Fetscherplatz,Fetscherpl. 2A,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-am-fetscherplatz.html,+49 351 4594592,https://www.cafe-eisold.de/impressum.html
+Café Toscana,Schillerpl. 7,1309,Dresden,Deutschland,http://www.cafe-toscana.de/,+49 351 3100744,http://www.cafe-positano.de/impressum
+Café Hüblers,Hüblerstraße 2,1309,Dresden,Deutschland,https://baeckerei-matzker.de/cafe-hueblers/,+49 351 31905530,https://www.unser-baecker.de/impressum
+Charlottes Enkel Cafe,Loschwitzer Str. 58,1309,Dresden,Deutschland,http://www.charlottesenkel.com/,+49 351 31208030,http://milchmaedchen-cafe.de/impressum
+Ottendorfer Mühlenbäcker,Dohnaer Str. 182,1239,Dresden,Deutschland,https://muehlenbaecker.de/,+49 351 20476951,https://www.studentenwerk-dresden.de/impressum.html
+Eiscafé Tortuga,Heinz-Bongartz-Straße 24,1239,Dresden,Deutschland,http://www.cafe-tortuga.de/,+49 162 6190401,http://gourmetta.de/impressum
+Café Caracciola,Fritz-Meinhardt-Straße 1,1239,Dresden,Deutschland,http://gourmetta.de/,+49 351 2822170,http://www.cafe-bluemchen.de/impressum
+Café Luby,Hertzstraße 22,1257,Dresden,Deutschland,http://www.cultus-dresden.de/,,https://www.baeckerei-laube.de/impressum
+Café Lino,Schandauer Str. 23 D,1309,Dresden,Deutschland,http://xn--caflino-dya.de/,+49 351 21933955,https://muehlenbaecker.de/impressum
+Café & Pension Blümchen,Pirnaer Landstraße 109,1257,Dresden,Deutschland,http://www.cafe-bluemchen.de/,+49 351 2014747,http://www.cafe-toscana.de/impressum.html
+"Ka'Fee Girrbach - Kuchen, Kaffee, Frühstück, Brunch",Striesener Str. 31,1307,Dresden,Deutschland,https://www.kafee-girrbach.de/,+49 351 50197990,https://www.cafe-eisold.de/impressum.html
+Café Toscana,Schillerpl. 7,1309,Dresden,Deutschland,http://www.cafe-toscana.de/,+49 351 3100744,http://www.landbaeckerei-schmidt.de/impressum
+Café Luby,Hertzstraße 22,1257,Dresden,Deutschland,http://www.cultus-dresden.de/,,http://milchmaedchen-cafe.de/impressum
+Bäckerei & Konditorei Laube,"Bauhaus Baumarkt, Tschirnhausstraße 2",1239,Dresden,Deutschland,https://www.baeckerei-laube.de/filialen-cafes/dresden-bauhaus-tschirnhausstrasse/,+49 351 20611362,http://gourmetta.de/impressum
+Ottendorfer Mühlenbäcker,Prohliser Allee 4,1239,Dresden,Deutschland,https://muehlenbaecker.de/,+49 351 25932318,https://www.studentenwerk-dresden.de/impressum.html
+Konditorei & Café B. Bierbaum,Sosaer Str. 7,1257,Dresden,Deutschland,http://www.konditorei-bierbaum.de/,+49 351 2002101,https://www.unser-baecker.de/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Breitscheidstraße 67,1237,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 25384353,http://www.cafe-bluemchen.de/impressum
+Eisold Bäckerei - Konditorei - Café,Zamenhofstraße 6,1257,Dresden,Deutschland,http://www.cafe-eisold.de/,+49 351 21098444,http://www.landbaeckerei-schmidt.de/impressum
+Café Caracciola,Fritz-Meinhardt-Straße 1,1239,Dresden,Deutschland,http://gourmetta.de/,+49 351 2822170,https://www.baeckerei-wippler.de/impressum
+"Ka'Fee Girrbach - Kuchen, Kaffee, Frühstück, Brunch",Striesener Str. 31,1307,Dresden,Deutschland,https://www.kafee-girrbach.de/,+49 351 50197990,http://www.charlottesenkel.com/impressum
+Café & Pension Blümchen,Pirnaer Landstraße 109,1257,Dresden,Deutschland,http://www.cafe-bluemchen.de/,+49 351 2014747,https://baeckerei-matzker.de/impressum
+Stadtcafe,Bahnhofstraße 10,1809,Heidenau,Deutschland,https://delflly.pw/marktplatz-heidenau-a7cy3gc,+49 3529 518637,https://www.landbaeckerei-schmidt.de/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Leubener Str. 34,1279,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 21760463,https://www.studentenwerk-dresden.de/impressum.html
+Landbäckerei Schmidt GmbH - Café,Gabelsberger Str. 8,1809,Heidenau,Deutschland,https://www.landbaeckerei-schmidt.de/filialen,+49 3529 574216,https://www.unser-baecker.de/impressum
+Eisold Bäckerei - Konditorei - Café,Zamenhofstraße 6,1257,Dresden,Deutschland,http://www.cafe-eisold.de/,+49 351 21098444,http://www.eiseck.de/impressum
+Café Toscana,Schillerpl. 7,1309,Dresden,Deutschland,http://www.cafe-toscana.de/,+49 351 3100744,https://cafe-sonnenschein-dresden.metro.biz/impressum
+Café Hüblers,Hüblerstraße 2,1309,Dresden,Deutschland,https://baeckerei-matzker.de/cafe-hueblers/,+49 351 31905530,http://www.charlottesenkel.com/impressum
+Sächsische Schokoladenmanufaktur Café,Güterbahnhofstraße 60,1809,Heidenau,Deutschland,https://www.schokoklick.de/info/ueber-uns.html,+49 3529 539915,http://www.cafe-toscana.de/impressum.html
+Café Story,Wormser Str. 30A,1309,Dresden,Deutschland,http://cafestory.de/,+49 177 7810342,https://baeckerei-matzker.de/impressum
+Speisecafé Die Fabrik,Papstdorfer Str. 17,1277,Dresden,Deutschland,https://diefabrik.wixsite.com/diefabrik,+49 1573 7891525,http://www.konditorei-wippler.de/impressum
+Cafe Sonnenschein,Altenberger Str. 23,1277,Dresden,Deutschland,https://cafe-sonnenschein-dresden.metro.biz/?lang=de,+49 176 70609735,http://milchmaedchen-cafe.de/impressum
+Bäckerei Emil Reimann,Bodenbacher Str. 81a,1277,Dresden,Deutschland,https://www.emil-reimann.de/de/filialen/uebersicht-unserer-filialen/baeckerei-und-cafe-im-obi-1656.html,+49 178 4509539,https://www.gradel.com/impressum
+Café Toscana,Schillerpl. 7,1309,Dresden,Deutschland,http://www.cafe-toscana.de/,+49 351 3100744,https://www.baeckerei-dreissig.de/impressum
+Café Hüblers,Hüblerstraße 2,1309,Dresden,Deutschland,https://baeckerei-matzker.de/cafe-hueblers/,+49 351 31905530,http://www.cafe-bluemchen.de/impressum
+"Ka'Fee Girrbach - Kuchen, Kaffee, Frühstück, Brunch",Striesener Str. 31,1307,Dresden,Deutschland,https://www.kafee-girrbach.de/,+49 351 50197990,https://www.gradel.com/impressum
+émoi,Augsburger Str. 48,1309,Dresden,Deutschland,http://cafe-emoi.com/,+49 351 31387000,http://www.charlottesenkel.com/impressum
+Café Eisold am Fetscherplatz,Fetscherpl. 2A,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-am-fetscherplatz.html,+49 351 4594592,http://www.cafe-toscana.de/impressum.html
+Konditorei u. Cafe Gradel,Wehlener Str. 28,1279,Dresden,Deutschland,https://www.gradel.com/,+49 351 2517425,https://cafe-sonnenschein-dresden.metro.biz/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Leubener Str. 34,1279,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 21760463,http://www.konditorei-wippler.de/impressum
+Bäckerei Dreißig,Alttolkewitz 26,1279,Dresden,Deutschland,https://www.baeckerei-dreissig.de/,+49 351 25969644,https://www.unser-baecker.de/impressum
+Konditorei u. Cafe Gradel,Wehlener Str. 28,1279,Dresden,Deutschland,https://www.gradel.com/,+49 351 2517425,https://baeckerei-matzker.de/impressum
+Café & Pension Blümchen,Pirnaer Landstraße 109,1257,Dresden,Deutschland,http://www.cafe-bluemchen.de/,+49 351 2014747,http://milchmaedchen-cafe.de/impressum
+Café Luby,Hertzstraße 22,1257,Dresden,Deutschland,http://www.cultus-dresden.de/,,http://milchmaedchen-cafe.de/impressum
+Charlottes Enkel Cafe,Loschwitzer Str. 58,1309,Dresden,Deutschland,http://www.charlottesenkel.com/,+49 351 31208030,http://www.oswaldz.de/impressum.html
+Kaffee Wippler GmbH,Körnerpl. 2,1326,Dresden,Deutschland,http://www.konditorei-wippler.de/,+49 351 2698040,https://www.studentenwerk-dresden.de/impressum.html
+Cafe Sonnenschein,Altenberger Str. 23,1277,Dresden,Deutschland,https://cafe-sonnenschein-dresden.metro.biz/?lang=de,+49 176 70609735,http://www.cafe-toscana.de/impressum.html
+Café Milchmädchen,Grunaer Str. 27,1069,Dresden,Deutschland,http://milchmaedchen-cafe.de/,+49 351 21512735,http://caneu.de/impressum
+Eisold Bäckerei - Konditorei - Café,Zwinglistraße 40-46,1277,Dresden,Deutschland,http://www.cafe-eisold.de/,+49 351 2502894,https://dresdner-backhaus.de/impressum
+Café Blau,Wundtstraße 1,1217,Dresden,Deutschland,https://www.studentenwerk-dresden.de/mensen/details-cafe-blau.html,+49 351 47940111,https://www.baeckerei-dreissig.de/impressum
+Café Eisold am Fetscherplatz,Fetscherpl. 2A,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-am-fetscherplatz.html,+49 351 4594592,https://www.instagram.com/impressum
+Café Oswaldz,Bautzner Str. 9,1099,Dresden,Deutschland,http://www.oswaldz.de/,+49 173 4292053,https://www.unser-baecker.de/impressum
+"CANEU, Cafe Neustadt",Bautzner Str. 63,1099,Dresden,Deutschland,http://caneu.de/,+49 351 8996649,http://www.charlottesenkel.com/impressum
+Dresdner Backhaus-Ihre Backmanufaktur -Café Backhaus,Augsburger Str. 4,1309,Dresden,Deutschland,https://dresdner-backhaus.de/,+49 351 43508723,http://www.muehlenbaecker.de/impressum
+Café Eisold an der Uniklinik,Fiedlerstraße 36,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-an-der-uniklinik.html,+49 351 4416324,https://www.cafeglocke.de/impressum
+Café Glocke - Tagesbar & Café | Dresden-Neustadt,"Pulsnitzer Straße 1, Ecke, Martin-Luther-Platz",1099,Dresden,Deutschland,https://www.cafeglocke.de/,+49 351 89962500,https://www.unser-baecker.de/impressum
+Lloyd’s Café & Bar,Martin-Luther-Straße 17,1099,Dresden,Deutschland,http://www.lloyds-cafe-bar.de/,+49 351 5018774,https://www.baeckerei-dreissig.de/impressum
+CAFé OHA,Güntzstraße 34,1307,Dresden,Deutschland,https://www.instagram.com/cafeoha,,https://www.johannstaedterkulturtreff.de/impressum.html
+Café Markthalle,"Markthalle, Metzer Str. 1",1097,Dresden,Deutschland,https://www.cafe-markthalle.de/,+49 1523 6236115,https://dresdner-backhaus.de/impressum
+Café Lino,Schandauer Str. 23 D,1309,Dresden,Deutschland,http://xn--caflino-dya.de/,+49 351 21933955,https://cafe-sonnenschein-dresden.metro.biz/impressum
+"Ka'Fee Girrbach - Kuchen, Kaffee, Frühstück, Brunch",Striesener Str. 31,1307,Dresden,Deutschland,https://www.kafee-girrbach.de/,+49 351 50197990,https://baeckerei-matzker.de/impressum
+Café Hüblers,Hüblerstraße 2,1309,Dresden,Deutschland,https://baeckerei-matzker.de/cafe-hueblers/,+49 351 31905530,http://www.cafe-luk.de/impressum
+Café Eisold am Fetscherplatz,Fetscherpl. 2A,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-am-fetscherplatz.html,+49 351 4594592,http://www.konditorei-wippler.de/impressum
+Ottendorfer Mühlenbäcker,Blasewitzer Str. 45,1307,Dresden,Deutschland,http://www.muehlenbaecker.de/,+49 351 45690207,http://www.muehlenbaecker.de/impressum
+Bäckerei Dreißig,Nicolaistraße 28,1307,Dresden,Deutschland,https://www.baeckerei-dreissig.de/,+49 351 44679473,http://milchmaedchen-cafe.de/impressum
+Café Eisold an der Uniklinik,Fiedlerstraße 36,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-an-der-uniklinik.html,+49 351 4416324,http://www.charlottesenkel.com/impressum
+Café Story,Wormser Str. 30A,1309,Dresden,Deutschland,http://cafestory.de/,+49 177 7810342,http://www.konditorei-wippler.de/impressum
+Cafe Sonnenschein,Altenberger Str. 23,1277,Dresden,Deutschland,https://cafe-sonnenschein-dresden.metro.biz/?lang=de,+49 176 70609735,http://www.cafe-toscana.de/impressum.html
+Café Milchmädchen,Grunaer Str. 27,1069,Dresden,Deutschland,http://milchmaedchen-cafe.de/,+49 351 21512735,http://www.oswaldz.de/impressum.html
+Cafe Luk,Grundstraße 174,1324,Dresden,Deutschland,http://www.cafe-luk.de/,+49 351 65399150,https://baeckerei-matzker.de/impressum
+Kaffee Wippler GmbH,Körnerpl. 2,1326,Dresden,Deutschland,http://www.konditorei-wippler.de/,+49 351 2698040,https://muehlenbaecker.de/impressum
+Ottendorfer Mühlenbäcker,Bautzner Landstraße 112-114,1324,Dresden,Deutschland,https://muehlenbaecker.de/,+49 351 31410715,http://milchmaedchen-cafe.de/impressum
+Café Schwebebahn,Sierksstraße 2,1326,Dresden,Deutschland,https://cafe-schwebebahn.jimdofree.com/,+49 1577 0160514,https://www.primus-service.de/impressum
+Bäckerei & Konditorei Richter,Bautzner Landstraße 150,1324,Dresden,Deutschland,http://www.richter-dd.de/,+49 351 2683051,http://www.charlottesenkel.com/impressum
+Primus Service GmbH,"Städtisches Klinikum Dresden - Cafeteria, Heinrich-Cotta-Straße 12",1324,Dresden,Deutschland,https://www.primus-service.de/,,http://www.cafe-toscana.de/impressum.html
+Café Lino,Schandauer Str. 23 D,1309,Dresden,Deutschland,http://xn--caflino-dya.de/,+49 351 21933955,https://www.baeckerei-dreissig.de/impressum
+"Ka'Fee Girrbach - Kuchen, Kaffee, Frühstück, Brunch",Striesener Str. 31,1307,Dresden,Deutschland,https://www.kafee-girrbach.de/,+49 351 50197990,http://www.konditorei-wippler.de/impressum
+Café Eisold an der Uniklinik,Fiedlerstraße 36,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-an-der-uniklinik.html,+49 351 4416324,https://baeckerei-matzker.de/impressum
+Café Continental,Görlitzer Str. 1,1099,Dresden,Deutschland,http://www.cafe-continental-dresden.de/,+49 351 2721722,https://cafe-sonnenschein-dresden.metro.biz/impressum
+Café Eisold am Fetscherplatz,Fetscherpl. 2A,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-am-fetscherplatz.html,+49 351 4594592,http://milchmaedchen-cafe.de/impressum
+Café Eckstein,Alaunstraße 47,1099,Dresden,Deutschland,http://www.cafe-eckstein-dresden.de/,+49 351 81071166,http://www.oswaldz.de/impressum.html
+Café Toscana,Schillerpl. 7,1309,Dresden,Deutschland,http://www.cafe-toscana.de/,+49 351 3100744,https://www.baeckerei-huebner.de/impressum
+Café Hüblers,Hüblerstraße 2,1309,Dresden,Deutschland,https://baeckerei-matzker.de/cafe-hueblers/,+49 351 31905530,http://www.cafe-toscana.de/impressum.html
+Café Lino,Schandauer Str. 23 D,1309,Dresden,Deutschland,http://xn--caflino-dya.de/,+49 351 21933955,http://www.charlottesenkel.com/impressum
+Unser Bäcker - Bäckerei und Konditorei GmbH,Leubener Str. 34,1279,Dresden,Deutschland,https://www.unser-baecker.de/,+49 351 21760463,http://www.cafe-luk.de/impressum
+"Ka'Fee Girrbach - Kuchen, Kaffee, Frühstück, Brunch",Striesener Str. 31,1307,Dresden,Deutschland,https://www.kafee-girrbach.de/,+49 351 50197990,http://www.konditorei-wippler.de/impressum
+Café Eisold am Fetscherplatz,Fetscherpl. 2A,1307,Dresden,Deutschland,https://www.cafe-eisold.de/cafe-am-fetscherplatz.html,+49 351 4594592,https://www.baeckerei-dreissig.de/impressum
+Café Luby,Hertzstraße 22,1257,Dresden,Deutschland,http://www.cultus-dresden.de/,,http://stollensiegel.de/impressum.html
+Café Continental,Görlitzer Str. 1,1099,Dresden,Deutschland,http://www.cafe-continental-dresden.de/,+49 351 2721722,https://baeckerei-matzker.de/impressum
+Café Oswaldz,Bautzner Str. 9,1099,Dresden,Deutschland,http://www.oswaldz.de/,+49 173 4292053,http://www.cafe-toscana.de/impressum.html
+Café Toscana,Schillerpl. 7,1309,Dresden,Deutschland,http://www.cafe-toscana.de/,+49 351 3100744,https://www.baeckerei-wippler.de/impressum
+Kaffee Wippler GmbH,Körnerpl. 2,1326,Dresden,Deutschland,http://www.konditorei-wippler.de/,+49 351 2698040,http://milchmaedchen-cafe.de/impressum
+Cafe Luk,Grundstraße 174,1324,Dresden,Deutschland,http://www.cafe-luk.de/,+49 351 65399150,https://muehlenbaecker.de/impressum
+Charlottes Enkel Cafe,Loschwitzer Str. 58,1309,Dresden,Deutschland,http://www.charlottesenkel.com/,+49 351 31208030,http://www.oswaldz.de/impressum.html
+Ottendorfer Mühlenbäcker,Bautzner Landstraße 112-114,1324,Dresden,Deutschland,https://muehlenbaecker.de/,+49 351 31410715,https://www.unser-baecker.de/impressum
+Café Continental,Görlitzer Str. 1,1099,Dresden,Deutschland,http://www.cafe-continental-dresden.de/,+49 351 2721722,https://www.unser-baecker.de/impressum
