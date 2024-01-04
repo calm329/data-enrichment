@@ -90,6 +90,22 @@
         "documentation": {}
     },
     {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
         "label": "print",
         "importPath": "rich",
         "description": "rich",
@@ -269,11 +285,19 @@
         "documentation": {}
     },
     {
-        "label": "BeautifulSoup",
-        "importPath": "bs4",
-        "description": "bs4",
+        "label": "PdfFileReader",
+        "importPath": "PyPDF4",
+        "description": "PyPDF4",
         "isExtraImport": true,
-        "detail": "bs4",
+        "detail": "PyPDF4",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
         "documentation": {}
     },
     {
@@ -620,7 +644,7 @@
         "kind": 2,
         "importPath": "impressum",
         "description": "impressum",
-        "peekOfCode": "def add_url_scheme_if_none(url):\n  # Check if URL scheme (http/https) is present and add it if not\n  parsed_url = urlparse(url)\n  if not parsed_url.scheme:\n    return \"http://\" + url\n  return url\ndef get_impressum_url(url):\n  # Define potential paths for impressum page\n  impressum_paths = ['/impressum', '/impressum.html', '/legal']\n  # Iterate over potential paths and try to make a GET request",
+        "peekOfCode": "def add_url_scheme_if_none(url):\n  # Check if URL scheme (http/https) is present and add it if not\n  parsed_url = urlparse(url)\n  if not parsed_url.scheme:\n    return \"http://\" + url\n  return url\ndef get_impressum_url(url):\n  try:\n    response = requests.get(url, timeout=5)\n    if response.status_code == 200:",
         "detail": "impressum",
         "documentation": {}
     },
@@ -629,7 +653,7 @@
         "kind": 2,
         "importPath": "impressum",
         "description": "impressum",
-        "peekOfCode": "def get_impressum_url(url):\n  # Define potential paths for impressum page\n  impressum_paths = ['/impressum', '/impressum.html', '/legal']\n  # Iterate over potential paths and try to make a GET request\n  for path in impressum_paths:\n    impressum_url = urljoin(url, path)\n    try:\n      # If the request is successful, return the URL\n      response = requests.get(impressum_url, timeout=5)\n      if response.status_code == 200:",
+        "peekOfCode": "def get_impressum_url(url):\n  try:\n    response = requests.get(url, timeout=5)\n    if response.status_code == 200:\n      soup = BeautifulSoup(response.text, 'html.parser')\n      for link in soup.find_all('a'):\n        href = link.get('href')\n        if href is not None:  # Make sure href is not None before using .lower() on it\n          if 'impressum' in href.lower():\n            return url + href",
         "detail": "impressum",
         "documentation": {}
     },
@@ -665,7 +689,7 @@
         "kind": 2,
         "importPath": "parsing",
         "description": "parsing",
-        "peekOfCode": "def fetch_and_process(url):\n  \"\"\"\n  This function takes a URL as input and fetches the HTML. It then extracts the contact \n  details from that HTML using GPT-3.5-turbo.\n  \"\"\"\n  try:\n    # Send a GET request to the URL\n    response = requests.get(url, timeout=5)\n    response.raise_for_status()\n    # Parse the HTML content",
+        "peekOfCode": "def fetch_and_process(url):\n  \"\"\"\n  This function takes a URL as input and fetches the HTML. It then extracts the contact \n  details from that HTML using GPT-3.5-turbo.\n  \"\"\"\n  try:\n    # Send a GET request to the URL\n    response = requests.get(url, timeout=5)\n    if response.status_code == 200:    \n      if url.endswith('.pdf'):",
         "detail": "parsing",
         "documentation": {}
     },
@@ -674,7 +698,7 @@
         "kind": 2,
         "importPath": "parsing",
         "description": "parsing",
-        "peekOfCode": "def extract_contact_from_websites(input_file, output_file):\n  \"\"\"\n  This function reads a CSV file containing URLs, fetches and processes each URL \n  to extract contact information, filters out the URLs that do not provide any \n  contact information and writes the remaining data to another CSV file.\n  \"\"\"\n  # Load the data containing the URLs\n  df = pd.read_csv(input_file)\n  urls = df['Impressum'].dropna().tolist()\n  results = []",
+        "peekOfCode": "def extract_contact_from_websites(input_file, output_file):\n  \"\"\"\n  This function reads a CSV file containing URLs, fetches and processes each URL \n  to extract contact information, filters out the URLs that do not provide any \n  contact information and writes the remaining data to another CSV file.\n  \"\"\"\n  # Load the data containing the URLs\n  df = pd.read_csv(input_file)\n  urls = df['impressum'].dropna().tolist()\n  results = []",
         "detail": "parsing",
         "documentation": {}
     },

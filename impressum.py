@@ -1,5 +1,6 @@
 import pandas as pd
 import requests
+from bs4 import BeautifulSoup
 from rich import print
 from urllib.parse import urljoin, urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -13,20 +14,19 @@ def add_url_scheme_if_none(url):
   return url
 
 def get_impressum_url(url):
-  # Define potential paths for impressum page
-  impressum_paths = ['/impressum', '/impressum.html', '/legal']
+  try:
+    response = requests.get(url, timeout=5)
+    if response.status_code == 200:
+      soup = BeautifulSoup(response.text, 'html.parser')
 
-  # Iterate over potential paths and try to make a GET request
-  for path in impressum_paths:
-    impressum_url = urljoin(url, path)
-    try:
-      # If the request is successful, return the URL
-      response = requests.get(impressum_url, timeout=5)
-      if response.status_code == 200:
-        return impressum_url
-    except requests.exceptions.RequestException:
-      pass
-  return None  # Return None if no impressum page is found
+      for link in soup.find_all('a'):
+        href = link.get('href')
+        if href is not None:  # Make sure href is not None before using .lower() on it
+          if 'impressum' in href.lower():
+            return url + href
+  except:
+    pass
+  return None
 
 def add_impressum_urls(csv_input_file, csv_output_file):
   # Read input CSV
@@ -52,10 +52,10 @@ def add_impressum_urls(csv_input_file, csv_output_file):
         impressum_urls.append(result)
   
   # Add impressum URLs to the DataFrame
-  df['Impressum'] = impressum_urls
+  df['impressum'] = impressum_urls
   
   # Drop rows where Impressum is NaN
-  df = df.dropna(subset=['Impressum'])
+  df = df.dropna(subset=['impressum'])
   
   # Write the DataFrame to a CSV file
   df.to_csv(csv_output_file, index=False)

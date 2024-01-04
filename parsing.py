@@ -2,6 +2,8 @@ import os
 import json
 from bs4 import BeautifulSoup
 import pandas as pd
+from PyPDF4 import PdfFileReader
+from io import BytesIO
 from rich import print
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -20,29 +22,45 @@ def fetch_and_process(url):
   try:
     # Send a GET request to the URL
     response = requests.get(url, timeout=5)
-    response.raise_for_status()
     
-    # Parse the HTML content
-    soup = BeautifulSoup(response.text, 'html.parser')
-    text = soup.find('body').get_text(strip=True)
+    if response.status_code == 200:    
+      if url.endswith('.pdf'):
+        # Creating a BytesIO object
+        file = BytesIO(response.content)
 
-    # Use GPT-3.5-turbo to extract contact information from the text
-    client = OpenAI()
-    completion = client.chat.completions.create(
-      model="gpt-3.5-turbo",
-      messages=[
-          {
-            "role": "user",
-            "content": "Find a contact person with firstname, lastname and email in the following text and output them in JSON format. Ignore titles like Dr., etc. The response must be like this - {firstname: '', lastname: '', email: ''}:\n\n" + text
-          }
-      ]
-    )
+        # Creating a PdfFileReader object
+        pdf_reader = PdfFileReader(file)
 
-    # Extract contact information from the GPT-3.5-turbo completion
-    contact_info = completion.choices[0].message.content
-    contact_info_json = json.loads(contact_info)
-    return contact_info_json.get('firstname', None), contact_info_json.get('lastname', None), contact_info_json.get('email', None)
+        # Getting the number of pages in the PDF
+        num_pages = len(pdf_reader.pages)
 
+        content = ""
+
+        # Creating a pdf reader object
+        for page in range(num_pages):
+            pdf_page = pdf_reader.pages[page]
+            content += pdf_page.extractText() + "\n"
+      else:
+        # Parse the HTML content
+        soup = BeautifulSoup(response.text, 'html.parser')
+        content = soup.find('body').get_text(strip=True)
+
+      # Use GPT-3.5-turbo to extract contact information from the text
+      client = OpenAI()
+      completion = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {
+              "role": "user",
+              "content": "Find a contact person with firstname, lastname and email in the following text and output them in JSON format. Ignore titles like Dr., etc. The response must be like this - {firstname: '', lastname: '', email: ''}:\n\n" + content
+            }
+        ]
+      )
+
+      # Extract contact information from the GPT-3.5-turbo completion
+      contact_info = completion.choices[0].message.content
+      contact_info_json = json.loads(contact_info)
+      return contact_info_json.get('firstname', None), contact_info_json.get('lastname', None), contact_info_json.get('email', None)
   except Exception as e:
     pass
   return None, None, None
@@ -56,7 +74,7 @@ def extract_contact_from_websites(input_file, output_file):
 
   # Load the data containing the URLs
   df = pd.read_csv(input_file)
-  urls = df['Impressum'].dropna().tolist()
+  urls = df['impressum'].dropna().tolist()
   
   results = []
   # Fetch and process all URLs in parallel
@@ -67,13 +85,13 @@ def extract_contact_from_websites(input_file, output_file):
       results.append(result)
 
   # Prepare dataframe with valid Impressum URLs
-  df_valid = df[df['Impressum'].notna()].copy()
+  df_valid = df[df['impressum'].notna()].copy()
 
   # Update dataframe with results
-  df_valid[['FirstName', 'LastName', "Email"]] = pd.DataFrame(results, index=df_valid.index)
+  df_valid[['firstName', 'lastName', "email"]] = pd.DataFrame(results, index=df_valid.index)
 
-  # Filter out entries where 'FirstName', 'LastName', and 'Email' are all None
-  df_valid = df_valid.dropna(subset=['FirstName', 'LastName', 'Email'], how='all')
+  # Filter out entries where 'firstName', 'lastName', and 'email' are all None
+  df_valid = df_valid.dropna(subset=['firstName', 'lastName', 'email'], how='all')
 
   # Save the results to a CSV file
   df_valid.to_csv(output_file, index=False)
