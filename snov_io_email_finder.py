@@ -57,7 +57,7 @@ def enrich_data_with_email_finder(csv_input_file, csv_output_file):
   df['private_email'] = None
 
   # Calculate the wait time to respect the rate limit (400 per hour)
-  wait_time = 3600 / 400
+  wait_time = 60 / 60
 
   # Begin data enrichment using SNOV API
   with tqdm(total=df.shape[0], bar_format='{desc}{percentage:3.0f}% {bar} {n:.0f}/{total_fmt} - [{elapsed}]',) as pbar:

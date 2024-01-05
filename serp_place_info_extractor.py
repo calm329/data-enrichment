@@ -64,7 +64,7 @@ def extract_place_information(keyword, ll, save_path, clear=True):
   data = []
   
   # Maintain a delay between each batch of requests
-  wait_time = 3600 / 3000 * 20
+  wait_time = round(3600 / 3000) + 1
   total_count = 20
   
   # A progress bar to track the number of requests

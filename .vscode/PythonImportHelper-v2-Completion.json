@@ -734,7 +734,7 @@
         "kind": 2,
         "importPath": "snov_io_email_finder",
         "description": "snov_io_email_finder",
-        "peekOfCode": "def enrich_data_with_email_finder(csv_input_file, csv_output_file):\n  # Initialize the SNOV API with client id and secret\n  snov = SnovAPI(os.getenv('SNOV_CLIENT_ID'), os.getenv('SNOV_CLIENT_SECRET'))\n  # Load the dataframe from CSV\n  df = pd.read_csv(csv_input_file)\n  # Initializing a column to store private emails from the enriched data\n  df['private_email'] = None\n  # Calculate the wait time to respect the rate limit (400 per hour)\n  wait_time = 3600 / 400\n  # Begin data enrichment using SNOV API",
+        "peekOfCode": "def enrich_data_with_email_finder(csv_input_file, csv_output_file):\n  # Initialize the SNOV API with client id and secret\n  snov = SnovAPI(os.getenv('SNOV_CLIENT_ID'), os.getenv('SNOV_CLIENT_SECRET'))\n  # Load the dataframe from CSV\n  df = pd.read_csv(csv_input_file)\n  # Initializing a column to store private emails from the enriched data\n  df['private_email'] = None\n  # Calculate the wait time to respect the rate limit (400 per hour)\n  wait_time = 60 / 60\n  # Begin data enrichment using SNOV API",
         "detail": "snov_io_email_finder",
         "documentation": {}
     }
