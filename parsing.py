@@ -1,4 +1,3 @@
-import os
 import json
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -13,6 +12,10 @@ from dotenv import load_dotenv
 
 load_dotenv()  # load environment variables
 
+def correct_email(email):
+  # replace (at) and [at] with @
+  return email.replace("(at)", "@").replace("[at]", "@")
+  
 def fetch_and_process(url):
   """
   This function takes a URL as input and fetches the HTML. It then extracts the contact 
@@ -60,7 +63,7 @@ def fetch_and_process(url):
       # Extract contact information from the GPT-3.5-turbo completion
       contact_info = completion.choices[0].message.content
       contact_info_json = json.loads(contact_info)
-      return contact_info_json.get('firstname', None), contact_info_json.get('lastname', None), contact_info_json.get('email', None)
+      return contact_info_json.get('firstname', None), contact_info_json.get('lastname', None), correct_email(contact_info_json.get('email', None))
   except Exception as e:
     pass
   return None, None, None
@@ -78,7 +81,7 @@ def extract_contact_from_websites(input_file, output_file):
   
   results = []
   # Fetch and process all URLs in parallel
-  with ThreadPoolExecutor(max_workers=10) as executor:
+  with ThreadPoolExecutor(max_workers=1) as executor:
     futures = {executor.submit(fetch_and_process, url): url for url in urls}
     for future in tqdm(as_completed(futures), total=len(futures), desc="Extracting contact information: ", bar_format='{desc}{percentage:3.0f}% {bar} {n_fmt}/{total_fmt} - [{elapsed}]'):
       result = future.result()

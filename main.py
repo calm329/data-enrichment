@@ -23,6 +23,11 @@ def sample_func():
     df = pd.read_csv('data/basic.csv', dtype={'postal_code': str})
     for row in df.itertuples():
       extract_place_information(keyword, f"@{row.latitude},{row.longitude},15z", 'output/googlemaps.csv', clear=False)
+      
+    df = pd.read_csv('output/googlemaps.csv')
+    df.drop_duplicates(subset='website', keep='first', inplace=True)
+    df.to_csv('output/googlemaps.csv', index=False)
+    
     add_impressum_urls('output/googlemaps.csv', 'output/physio_impressum.csv')
     extract_contact_from_websites('output/physio_impressum.csv', 'output/physio_impressum_result.csv')
     enrich_data_with_email_finder('output/physio_impressum_result.csv', 'output/physio_enriched.csv')
@@ -36,6 +41,11 @@ def sample_func():
     df_filtered = df[df['postal_code'].astype(str).str.startswith(postal_code)]
     for row in df_filtered.itertuples():
       extract_place_information(keyword, f"@{row.latitude},{row.longitude},15z", 'output/googlemaps.csv', clear=False)
+    
+    df = pd.read_csv('output/googlemaps.csv')
+    df.drop_duplicates(subset='website', keep='first', inplace=True)
+    df.to_csv('output/googlemaps.csv', index=False)
+    
     add_impressum_urls('output/googlemaps.csv', 'output/physio_impressum.csv')
     extract_contact_from_websites('output/physio_impressum.csv', 'output/physio_impressum_result.csv')
     enrich_data_with_email_finder('output/physio_impressum_result.csv', 'output/physio_enriched.csv')

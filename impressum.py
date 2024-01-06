@@ -18,14 +18,22 @@ def get_impressum_url(url):
     response = requests.get(url, timeout=5)
     if response.status_code == 200:
       soup = BeautifulSoup(response.text, 'html.parser')
+      
+      # Check if base tag exists and use that as the base for making URLs absolute
+      base = soup.find('base')
+      if base:
+        base_url = base['href']
+      else:
+        base_url = url
 
       for link in soup.find_all('a'):
         href = link.get('href')
         if href is not None:  # Make sure href is not None before using .lower() on it
           if 'impressum' in href.lower():
-            return url + href
+            return urljoin(base_url, href)
   except:
     pass
+
   return None
 
 def add_impressum_urls(csv_input_file, csv_output_file):
@@ -41,7 +49,7 @@ def add_impressum_urls(csv_input_file, csv_output_file):
   impressum_urls = []
   
   # Use ThreadPoolExecutor for concurrency
-  with ThreadPoolExecutor(max_workers=20) as executor:
+  with ThreadPoolExecutor(max_workers=1) as executor:
     # Create a new future for each URL
     futures = {executor.submit(get_impressum_url, url): url for url in urls}
     
