@@ -73,7 +73,7 @@ def extract_place_information(keyword, ll, save_path, clear=True):
       pbar.set_description("Requesting to SERP API")
       params["start"] = i
       results = client.search(params)
-      places = results['local_results']
+      places = results.get('local_results', [])
 
       for place in places:
         parsed_result = parse_address_and_get_details(place)
@@ -105,4 +105,4 @@ def extract_place_information(keyword, ll, save_path, clear=True):
 
 if __name__ == "__main__":
   # example usage of the function
-  extract_place_information("Kosmetikstudio", "@51.2535714,14.1347891,15z", save_path='output/googlemaps.csv')
+  extract_place_information("grocers", "@51.2535714,14.1347891,15z", save_path='output/googlemaps.csv')
