@@ -55,7 +55,7 @@ def fetch_and_process(url):
         messages=[
             {
               "role": "user",
-              "content": "Find a contact person with firstname, lastname and email in the following text and output them in JSON format. Ignore titles like Dr., etc. The response must be like this - {firstname: '', lastname: '', email: ''}:\n\n" + content
+              "content": "Find a contact person with firstname, lastname and email in the following text and output them in JSON format. And add salutation *in German*(e.g. Herr or Frau) based on firstname and lastname. Ignore titles like Dr., etc. The response must be like this - {salutation: '', firstname: '', lastname: '', email: ''}:\n\n" + content
             }
         ]
       )
@@ -63,10 +63,10 @@ def fetch_and_process(url):
       # Extract contact information from the GPT-3.5-turbo completion
       contact_info = completion.choices[0].message.content
       contact_info_json = json.loads(contact_info)
-      return contact_info_json.get('firstname', None), contact_info_json.get('lastname', None), correct_email(contact_info_json.get('email', None))
+      return contact_info_json.get('salutation', None), contact_info_json.get('firstname', None), contact_info_json.get('lastname', None), correct_email(contact_info_json.get('email', None))
   except Exception as e:
     pass
-  return None, None, None
+  return None, None, None, None
 
 def extract_contact_from_websites(input_file, output_file):
   """
@@ -91,10 +91,10 @@ def extract_contact_from_websites(input_file, output_file):
   df_valid = df[df['impressum'].notna()].copy()
 
   # Update dataframe with results
-  df_valid[['firstName', 'lastName', "email"]] = pd.DataFrame(results, index=df_valid.index)
+  df_valid[['salutation', 'firstName', 'lastName', "email"]] = pd.DataFrame(results, index=df_valid.index)
 
-  # Filter out entries where 'firstName', 'lastName', and 'email' are all None
-  df_valid = df_valid.dropna(subset=['firstName', 'lastName', 'email'], how='all')
+  # Filter out entries where 'salutation', 'firstName', 'lastName', and 'email' are all None
+  df_valid = df_valid.dropna(subset=['salutation', 'firstName', 'lastName', 'email'], how='all')
 
   # Save the results to a CSV file
   df_valid.to_csv(output_file, index=False)

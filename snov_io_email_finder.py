@@ -87,7 +87,19 @@ def enrich_data_with_email_finder(csv_input_file, csv_output_file):
         pbar.update(1 / wait_time)
 
   # Save the enriched dataframe to a CSV file
-  df.to_csv(csv_output_file, index=False)
+  chunk_size = eval(os.getenv('CHUNK_SIZE'))
+  chunks = [x for x in range(0, df.shape[0], chunk_size)]
+
+  # Get base file name
+  base = os.path.basename(csv_output_file)
+  # Remove .csv extension
+  filename = os.path.splitext(base)[0]
+
+  for i in range(len(chunks) - 1):
+      df.iloc[chunks[i]:chunks[i + 1]].to_csv(f'output/{filename}_{i}.csv', index=False)
+
+  # Edge case for the final chunk
+  df.iloc[chunks[-1]:].to_csv(f'output/{filename}_{len(chunks)}.csv', index=False)
 
   print(f"[green]Done enriching data. Enriched [bold yellow]{count}[/bold yellow] rows. Saved to [bold yellow]your_output_file.csv[/bold yellow].")
 

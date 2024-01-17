@@ -90,6 +90,23 @@
         "documentation": {}
     },
     {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
         "label": "BeautifulSoup",
         "importPath": "bs4",
         "description": "bs4",
@@ -341,23 +358,6 @@
         "importPath": "serpapi",
         "description": "serpapi",
         "detail": "serpapi",
-        "documentation": {}
-    },
-    {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
-        "documentation": {}
-    },
-    {
-        "label": "sleep",
-        "importPath": "time",
-        "description": "time",
-        "isExtraImport": true,
-        "detail": "time",
         "documentation": {}
     },
     {
@@ -631,11 +631,38 @@
         "documentation": {}
     },
     {
+        "label": "get_geolocation",
+        "kind": 2,
+        "importPath": "get_geocoding",
+        "description": "get_geocoding",
+        "peekOfCode": "def get_geolocation(postcode, country):\n  base_url = \"https://nominatim.openstreetmap.org/search\"\n  parameters = {\n    \"postalcode\": postcode,\n    \"country\": country,\n    \"format\": \"json\"\n  }\n  response = requests.get(base_url, params=parameters)\n  if response.status_code == 200:\n    json_response = response.json()",
+        "detail": "get_geocoding",
+        "documentation": {}
+    },
+    {
         "label": "key",
         "kind": 5,
         "importPath": "get_geocoding",
         "description": "get_geocoding",
-        "peekOfCode": "key = 'cd298485ee44452f91ce0629dfedd708'\nprint(convert_postcode_to_latlong('92260', key))",
+        "peekOfCode": "key = 'cd298485ee44452f91ce0629dfedd708'\ndf = pd.read_csv('data/basic-new.csv', dtype={'PLZ': str}, delimiter=';')\ni = 0\nfor row in df.itertuples():\n  lat, lng = get_geolocation(row.PLZ, \"Germany\")\n  print(row.Index, lat, lng)\n  df.loc[row.Index, 'latitude'] = lat\n  df.loc[row.Index, 'longitude'] = lng\n  i += 1\n  if (i % 30 == 0):",
+        "detail": "get_geocoding",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "get_geocoding",
+        "description": "get_geocoding",
+        "peekOfCode": "df = pd.read_csv('data/basic-new.csv', dtype={'PLZ': str}, delimiter=';')\ni = 0\nfor row in df.itertuples():\n  lat, lng = get_geolocation(row.PLZ, \"Germany\")\n  print(row.Index, lat, lng)\n  df.loc[row.Index, 'latitude'] = lat\n  df.loc[row.Index, 'longitude'] = lng\n  i += 1\n  if (i % 30 == 0):\n    df.to_csv('data/basic-new (1).csv', index=False)",
+        "detail": "get_geocoding",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "get_geocoding",
+        "description": "get_geocoding",
+        "peekOfCode": "i = 0\nfor row in df.itertuples():\n  lat, lng = get_geolocation(row.PLZ, \"Germany\")\n  print(row.Index, lat, lng)\n  df.loc[row.Index, 'latitude'] = lat\n  df.loc[row.Index, 'longitude'] = lng\n  i += 1\n  if (i % 30 == 0):\n    df.to_csv('data/basic-new (1).csv', index=False)\n    i = 0",
         "detail": "get_geocoding",
         "documentation": {}
     },
