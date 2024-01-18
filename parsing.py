@@ -66,7 +66,14 @@ def fetch_and_process(url):
             },
             {
               "role": "user",
-              "content": "Find a contact information with first name, last name, and email in the following text and output that one contact in JSON format(*Give me only JSON data*). And add the salutation *in German* (e.g. Herr or Frau) based on the first and last name. Ignore titles like Dr., etc. The response must look like this - {salutation: '', firstname: '', lastname: '', email: ''}:\n\n" + content
+              "content": """
+                In the provided Impressum content, please extract details for the first mentioned person, specifically their first name, last name, and email address.
+                Based on their first name and last name, decide whether to use 'Herr' (for males) or 'Frau' (for females) as their German salutation.
+
+                Please format your response as a JSON object with the following keys: 'salutation', 'firstname', 'lastname', and 'email'.
+                
+                {content}
+                """.format(content=content)
             }
         ]
       )
