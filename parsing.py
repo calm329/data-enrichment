@@ -46,7 +46,13 @@ def fetch_and_process(url):
       else:
         # Parse the HTML content
         soup = BeautifulSoup(response.text, 'html.parser')
-        content = soup.find('body').get_text(strip=True)
+        paragraphs = soup.find_all('p')  # find all p tags
+
+        content = ""
+
+        # loop over each p tag and extract the text
+        for paragraph in paragraphs:
+            content += "\n" + paragraph.get_text(strip=True)
 
       # Use GPT-3.5-turbo to extract contact information from the text
       client = OpenAI()
