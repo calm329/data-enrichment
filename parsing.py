@@ -61,7 +61,7 @@ def fetch_and_process(url):
         messages=[
             {
               "role": "user",
-              "content": "Find a contact person with firstname, lastname and email in the following text and output them in JSON format. And add salutation *in German*(e.g. Herr or Frau) based on firstname and lastname. Ignore titles like Dr., etc. The response must be like this - {salutation: '', firstname: '', lastname: '', email: ''}:\n\n" + content
+              "content": "Find a contact information with first name, last name, and email in the following text and output that one contact in JSON format(*Give me only JSON data*). And add the salutation *in German* (e.g. Herr or Frau) based on the first and last name. Ignore titles like Dr., etc. The response must look like this - {salutation: '', firstname: '', lastname: '', email: ''}:\n\n" + content
             }
         ]
       )
