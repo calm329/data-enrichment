@@ -694,11 +694,11 @@
         "documentation": {}
     },
     {
-        "label": "sample_func",
+        "label": "start",
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def sample_func():\n  keyword = questionary.text(\n    'What are you looking for?',\n  ).ask()\n  option = questionary.select(\n    'Please select an option below to continue',\n    choices=['Basic Scraping', 'Postal Code Scraping']\n  ).ask()\n  if option == 'Basic Scraping':\n    df = pd.read_csv('data/basic.csv', dtype={'postal_code': str})",
+        "peekOfCode": "def start():\n  keyword = questionary.text(\n    'What are you looking for?',\n  ).ask()\n  option = questionary.select(\n    'Please select an option below to continue',\n    choices=['Basic Scraping', 'Postal Code Scraping']\n  ).ask()\n  if not os.path.exists('output'):  # check if directory already exists\n    os.makedirs('output')",
         "detail": "main",
         "documentation": {}
     },
@@ -707,7 +707,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "app = typer.Typer()\n@app.command(\"start\")\ndef sample_func():\n  keyword = questionary.text(\n    'What are you looking for?',\n  ).ask()\n  option = questionary.select(\n    'Please select an option below to continue',\n    choices=['Basic Scraping', 'Postal Code Scraping']\n  ).ask()",
+        "peekOfCode": "app = typer.Typer()\n@app.command(\"start\")\ndef start():\n  keyword = questionary.text(\n    'What are you looking for?',\n  ).ask()\n  option = questionary.select(\n    'Please select an option below to continue',\n    choices=['Basic Scraping', 'Postal Code Scraping']\n  ).ask()",
         "detail": "main",
         "documentation": {}
     },

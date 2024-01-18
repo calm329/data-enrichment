@@ -5,11 +5,12 @@ from impressum import add_impressum_urls
 from parsing import extract_contact_from_websites
 from snov_io_email_finder import enrich_data_with_email_finder
 import pandas as pd
+import os
 
 app = typer.Typer()
 
 @app.command("start")
-def sample_func():
+def start():
   keyword = questionary.text(
     'What are you looking for?',
   ).ask()
@@ -18,6 +19,9 @@ def sample_func():
     'Please select an option below to continue',
     choices=['Basic Scraping', 'Postal Code Scraping']
   ).ask()
+  
+  if not os.path.exists('output'):  # check if directory already exists
+    os.makedirs('output')
   
   if option == 'Basic Scraping':
     df = pd.read_csv('data/basic.csv', dtype={'postal_code': str})
