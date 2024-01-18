@@ -57,8 +57,13 @@ def fetch_and_process(url):
       # Use GPT-3.5-turbo to extract contact information from the text
       client = OpenAI()
       completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-3.5-turbo-1106",
+        response_format={ "type": "json_object" },
         messages=[
+            {
+              "role": "system",
+              "content": "You are a helpful assistant designed to output JSON."
+            },
             {
               "role": "user",
               "content": "Find a contact information with first name, last name, and email in the following text and output that one contact in JSON format(*Give me only JSON data*). And add the salutation *in German* (e.g. Herr or Frau) based on the first and last name. Ignore titles like Dr., etc. The response must look like this - {salutation: '', firstname: '', lastname: '', email: ''}:\n\n" + content
