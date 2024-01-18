@@ -76,7 +76,7 @@ def extract_contact_from_websites(input_file, output_file):
   """
 
   # Load the data containing the URLs
-  df = pd.read_csv(input_file)
+  df = pd.read_csv(input_file, dtype={'zip_code': str})
   urls = df['impressum'].dropna().tolist()
   
   results = []

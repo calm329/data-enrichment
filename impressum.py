@@ -38,7 +38,7 @@ def get_impressum_url(url):
 
 def add_impressum_urls(csv_input_file, csv_output_file):
   # Read input CSV
-  df = pd.read_csv(csv_input_file)
+  df = pd.read_csv(csv_input_file, dtype={'zip_code': str})
   
   # Add URL scheme to all website URLs if there's none
   df['website'] = df['website'].apply(add_url_scheme_if_none)

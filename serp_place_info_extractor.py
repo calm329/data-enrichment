@@ -92,6 +92,7 @@ def extract_place_information(keyword, ll, save_path, clear=True):
     
   # Save the collected data to a CSV file
   df = pd.DataFrame(data, columns=['title', 'street_name_and_no', 'zip_code', 'city', 'country', 'website', 'phone'])
+  df['zip_code'] = df['zip_code'].astype(str)
 
   # Remove duplicates
   df.drop_duplicates(subset='website', keep='first', inplace=True)

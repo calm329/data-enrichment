@@ -51,7 +51,7 @@ def enrich_data_with_email_finder(csv_input_file, csv_output_file):
   snov = SnovAPI(os.getenv('SNOV_CLIENT_ID'), os.getenv('SNOV_CLIENT_SECRET'))
 
   # Load the dataframe from CSV
-  df = pd.read_csv(csv_input_file)
+  df = pd.read_csv(csv_input_file, dtype={'zip_code': str})
 
   # Initializing a column to store private emails from the enriched data
   df['private_email'] = None
