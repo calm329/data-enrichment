@@ -739,6 +739,15 @@
         "documentation": {}
     },
     {
+        "label": "csv_has_header",
+        "kind": 2,
+        "importPath": "serp_place_info_extractor",
+        "description": "serp_place_info_extractor",
+        "peekOfCode": "def csv_has_header(filename):\n    try:\n        df = pd.read_csv(filename, nrows=1)\n    except:\n        return False\n    # If the columns are of mixed type, then it's likely that the CSV file has headers.\n    if df.columns.dtype.kind == 'O':\n        return True\n    else:\n        return False",
+        "detail": "serp_place_info_extractor",
+        "documentation": {}
+    },
+    {
         "label": "parse_address_and_get_details",
         "kind": 2,
         "importPath": "serp_place_info_extractor",

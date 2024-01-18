@@ -13,6 +13,18 @@ warnings.filterwarnings("ignore", category=TqdmWarning)
 # Load environment variables
 dotenv.load_dotenv()
 
+def csv_has_header(filename):
+    try:
+        df = pd.read_csv(filename, nrows=1)
+    except:
+        return False
+
+    # If the columns are of mixed type, then it's likely that the CSV file has headers.
+    if df.columns.dtype.kind == 'O':
+        return True
+    else:
+        return False
+
 def parse_address_and_get_details(result):
   # Retrieve address from the result 
   full_address = result.get('address', '')
@@ -100,7 +112,7 @@ def extract_place_information(keyword, ll, save_path, clear=True):
   if clear:
     df.to_csv(save_path, index=False, encoding='utf-8')
   else:
-    df.to_csv(save_path, mode='a', index=False, encoding='utf-8', header=False)
+    df.to_csv(save_path, mode='a', index=False, encoding='utf-8', header=not csv_has_header(save_path))
     
   print(f"[green]Done Google Maps data extraction. Extracted [bold yellow]{len(data)}[/bold yellow] results. Saved to [bold yellow]{save_path}[/bold yellow].")
 
