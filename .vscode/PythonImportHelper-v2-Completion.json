@@ -171,6 +171,14 @@
         "documentation": {}
     },
     {
+        "label": "urlparse",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
         "label": "ThreadPoolExecutor",
         "importPath": "concurrent.futures",
         "description": "concurrent.futures",
@@ -736,6 +744,15 @@
         "description": "parsing",
         "peekOfCode": "def extract_contact_from_websites(input_file, output_file):\n  \"\"\"\n  This function reads a CSV file containing URLs, fetches and processes each URL \n  to extract contact information, filters out the URLs that do not provide any \n  contact information and writes the remaining data to another CSV file.\n  \"\"\"\n  # Load the data containing the URLs\n  df = pd.read_csv(input_file, dtype={'zip_code': str})\n  urls = df['impressum'].dropna().tolist()\n  results = []",
         "detail": "parsing",
+        "documentation": {}
+    },
+    {
+        "label": "get_domain",
+        "kind": 2,
+        "importPath": "serp_place_info_extractor",
+        "description": "serp_place_info_extractor",
+        "peekOfCode": "def get_domain(url):\n  domain = urlparse(url).netloc\n  if domain.startswith('www.'):\n    domain = domain[4:]\n  return domain\ndef csv_has_header(filename):\n    try:\n        df = pd.read_csv(filename, nrows=1)\n    except:\n        return False",
+        "detail": "serp_place_info_extractor",
         "documentation": {}
     },
     {

@@ -7,11 +7,18 @@ from tqdm import tqdm
 import time
 from rich import print
 import warnings
+from urllib.parse import urlparse
 from tqdm import TqdmWarning
 warnings.filterwarnings("ignore", category=TqdmWarning)
 
 # Load environment variables
 dotenv.load_dotenv()
+
+def get_domain(url):
+  domain = urlparse(url).netloc
+  if domain.startswith('www.'):
+    domain = domain[4:]
+  return domain
 
 def csv_has_header(filename):
     try:
@@ -53,9 +60,14 @@ def parse_address_and_get_details(result):
   # If website is missing, skip this result
   if website == '':
     return None
+  
+  try:
+    domain = get_domain(website)
+  except:
+    pass
 
   # Return the parsed address and details as a list
-  return [title, street_name_and_no, zip_code, city, country, website, phone]
+  return [title, street_name_and_no, zip_code, city, country, website, domain, phone]
 
 def extract_place_information(keyword, ll, save_path, clear=True):
   # Create a SerpApi client for Google Maps web scraping
@@ -103,11 +115,11 @@ def extract_place_information(keyword, ll, save_path, clear=True):
     pbar.set_description('Done')
     
   # Save the collected data to a CSV file
-  df = pd.DataFrame(data, columns=['title', 'street_name_and_no', 'zip_code', 'city', 'country', 'website', 'phone'])
+  df = pd.DataFrame(data, columns=['title', 'street_name_and_no', 'zip_code', 'city', 'country', 'website', 'domain', 'phone'])
   df['zip_code'] = df['zip_code'].astype(str)
 
   # Remove duplicates
-  df.drop_duplicates(subset='website', keep='first', inplace=True)
+  df.drop_duplicates(subset='domain', keep='first', inplace=True)
 
   if clear:
     df.to_csv(save_path, index=False, encoding='utf-8')

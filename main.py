@@ -29,7 +29,7 @@ def start():
       extract_place_information(keyword, f"@{row.latitude},{row.longitude},15z", 'output/googlemaps.csv', clear=False)
       
     df = pd.read_csv('output/googlemaps.csv')
-    df.drop_duplicates(subset='website', keep='first', inplace=True)
+    df.drop_duplicates(subset='domain', keep='first', inplace=True)
     df.to_csv('output/googlemaps.csv', index=False)
     
     add_impressum_urls('output/googlemaps.csv', 'output/physio_impressum.csv')
@@ -47,7 +47,7 @@ def start():
       extract_place_information(keyword, f"@{row.latitude},{row.longitude},15z", 'output/googlemaps.csv', clear=False)
     
     df = pd.read_csv('output/googlemaps.csv')
-    df.drop_duplicates(subset='website', keep='first', inplace=True)
+    df.drop_duplicates(subset='domain', keep='first', inplace=True)
     df.to_csv('output/googlemaps.csv', index=False)
     
     add_impressum_urls('output/googlemaps.csv', 'output/physio_impressum.csv')
