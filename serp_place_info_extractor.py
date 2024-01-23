@@ -96,8 +96,12 @@ def extract_place_information(keyword, ll, save_path, clear=True):
     for i in range(0, total_count, 20):
       pbar.set_description("Requesting to SERP API")
       params["start"] = i
-      results = client.search(params)
-      places = results.get('local_results', [])
+      
+      try:
+        results = client.search(params)
+        places = results.get('local_results', [])
+      except:
+        places = []
 
       for place in places:
         parsed_result = parse_address_and_get_details(place)
