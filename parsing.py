@@ -67,10 +67,13 @@ def fetch_and_process(url):
             {
               "role": "user",
               "content": """
+                ***If there is no person mentioned, return 'None'.***
+          
                 In the provided Impressum content, please extract details for the first mentioned person, specifically their first name, last name, and email address.
                 Based on their first name and last name, decide whether to use 'Herr' (for males) or 'Frau' (for females) as their German salutation.
 
-                Please format your response as a JSON object with the following keys: 'salutation', 'firstname', 'lastname', and 'email'.
+                Please format your response as a JSON object with the following keys always: 'salutation', 'firstname', 'lastname', and 'email'.
+                
                 
                 {content}
                 """.format(content=content)
