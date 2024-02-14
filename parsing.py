@@ -111,6 +111,8 @@ def extract_contact_from_websites(input_file, output_file):
   # Prepare dataframe with valid Impressum URLs
   df_valid = df[df['impressum'].notna()].copy()
 
+  df_valid['zip_code'] = df_valid['zip_code'].astype(str)
+
   # Update dataframe with results
   df_valid[['salutation', 'firstName', 'lastName', "email"]] = pd.DataFrame(results, index=df_valid.index)
 

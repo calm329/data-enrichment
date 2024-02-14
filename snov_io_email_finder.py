@@ -42,7 +42,7 @@ class SnovAPI:
       
       if response_data.get("success") and response_data.get("data", {}).get("emails"):
         for email_info in response_data["data"]["emails"]:
-          if email_info.get("emailStatus") == "valid":
+          if email_info["email"]:
             return email_info["email"]
     return None
 
@@ -65,9 +65,9 @@ def enrich_data_with_email_finder(csv_input_file, csv_output_file):
   with tqdm(total=df.shape[0], bar_format='{desc}{percentage:3.0f}% {bar} {n:.0f}/{total_fmt} - [{elapsed}]',) as pbar:
     for index, row in df.iterrows():
       pbar.set_description("Enriching data")
-      website = row.get('website')
-      first_name = row.get('FirstName')
-      last_name = row.get('LastName')
+      website = row.get('domain')
+      first_name = row.get('firstName')
+      last_name = row.get('lastName')
 
       if all([website, first_name, last_name]):
         domain = website.split("//")[-1].split("/")[0]
