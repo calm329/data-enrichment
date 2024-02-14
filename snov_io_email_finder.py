@@ -42,7 +42,7 @@ class SnovAPI:
       
       if response_data.get("success") and response_data.get("data", {}).get("emails"):
         for email_info in response_data["data"]["emails"]:
-          if email_info["email"]:
+          if email_info.get("emailStatus") == "valid":
             return email_info["email"]
     return None
 
