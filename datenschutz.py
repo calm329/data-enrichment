@@ -13,7 +13,7 @@ def add_url_scheme_if_none(url):
     return "http://" + url
   return url
 
-def get_impressum_url(url):
+def get_datenschutz_url(url):
   try:
     response = requests.get(url, timeout=5)
     if response.status_code == 200:
@@ -29,14 +29,14 @@ def get_impressum_url(url):
       for link in soup.find_all('a'):
         href = link.get('href')
         if href is not None:  # Make sure href is not None before using .lower() on it
-          if 'impressum' in href.lower():
+          if 'datenschutz' in href.lower():
             return urljoin(base_url, href).strip()
   except:
     pass
 
   return None
 
-def add_impressum_urls(csv_input_file, csv_output_file):
+def add_datenschutz_urls(csv_input_file, csv_output_file):
   # Read input CSV
   df = pd.read_csv(csv_input_file, dtype={'zip_code': str})
   
@@ -46,29 +46,29 @@ def add_impressum_urls(csv_input_file, csv_output_file):
   # Convert the 'website' column to a list
   urls = df['website'].tolist()
 
-  impressum_urls = []
+  datenschutz_urls = []
   
   # Use ThreadPoolExecutor for concurrency
   with ThreadPoolExecutor(max_workers=1) as executor:
     # Create a new future for each URL
-    futures = {executor.submit(get_impressum_url, url): url for url in urls}
+    futures = {executor.submit(get_datenschutz_url, url): url for url in urls}
     
     # Iterate over the futures as they complete. 'as_completed' returns an iterator that yields futures as they complete.
-    for future in tqdm(as_completed(futures), total=len(futures), desc="Adding Impressum URLs: ", bar_format='{desc}{percentage:3.0f}% {bar} {n_fmt}/{total_fmt} - [{elapsed}]'):
-        # Get the result from the future and append to impressum_urls
+    for future in tqdm(as_completed(futures), total=len(futures), desc="Adding Datenschutz URLs: ", bar_format='{desc}{percentage:3.0f}% {bar} {n_fmt}/{total_fmt} - [{elapsed}]'):
+        # Get the result from the future and append to datenschutz_urls
         result = future.result()
-        impressum_urls.append(result)
+        datenschutz_urls.append(result)
   
-  # Add impressum URLs to the DataFrame
-  df['impressum'] = impressum_urls
+  # Add datenschutz URLs to the DataFrame
+  df['datenschutz'] = datenschutz_urls
   
-  # Drop rows where Impressum is NaN
-  df = df.dropna(subset=['impressum'])
+  # Drop rows where Datenschutz is NaN
+  df = df.dropna(subset=['datenschutz'])
   
   # Write the DataFrame to a CSV file
   df.to_csv(csv_output_file, index=False)
   
-  print(f"[green]Added [bold yellow]{len(df)}[/bold yellow] Impressum URLs to [bold yellow]{csv_output_file}[/bold yellow].")
+  print(f"[green]Added [bold yellow]{len(df)}[/bold yellow] Datenschutz URLs to [bold yellow]{csv_output_file}[/bold yellow].")
 
 if __name__ == "__main__":
-  add_impressum_urls('output/googlemaps.csv', 'output/physio_impressum.csv')
+  add_datenschutz_urls('output/physio_impressum_result.csv', 'output/physio_datenschutz.csv')
