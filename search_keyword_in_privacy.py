@@ -21,6 +21,9 @@ def fetch_and_process(url, keywords):
   This function takes a URL as input and fetches the HTML. It then extracts the contact 
   details from that HTML using GPT-3.5-turbo.
   """
+
+  if (url is None):
+    return ['N'] * len(keywords)
   
   try:
     # Send a GET request to the URL
@@ -76,7 +79,7 @@ def search_in_privacy(input_file, output_file, keywords):
 
   # Load the data containing the URLs
   df = pd.read_csv(input_file, dtype={'zip_code': str})
-  urls = df['datenschutz'].dropna().tolist()
+  urls = df['datenschutz'].tolist()
   
   results = []
   # Fetch and process all URLs in parallel

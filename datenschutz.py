@@ -62,9 +62,6 @@ def add_datenschutz_urls(csv_input_file, csv_output_file):
   # Add datenschutz URLs to the DataFrame
   df['datenschutz'] = datenschutz_urls
   
-  # Drop rows where Datenschutz is NaN
-  df = df.dropna(subset=['datenschutz'])
-  
   # Write the DataFrame to a CSV file
   df.to_csv(csv_output_file, index=False)
   
